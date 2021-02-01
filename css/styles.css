@@ -191,7 +191,7 @@ img {
 }
 
 main {
-  background-color: blueviolet;
+  background-color: #b3b3b3;
   margin-left: 80px;
 }
 main .entry-header {
@@ -212,8 +212,11 @@ main .entry-header h2 {
   margin: 0;
 }
 main .entry {
-  background-color: #268db2;
+  background-color: transparent;
   padding: 10% 15%;
+}
+main .entry.black {
+  background-color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */

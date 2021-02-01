@@ -33,7 +33,7 @@ img {
   }
 }
 main {
-  background-color: blueviolet;
+  background-color: #b3b3b3;
   //   max-width: 95%;
   margin-left: 80px;
   .entry-header {
@@ -54,7 +54,10 @@ main {
     }
   }
   .entry {
-    background-color: #268db2;
+    background-color: transparent;
     padding: 10% 15%;
+    &.black {
+      background-color: black;
+    }
   }
 }

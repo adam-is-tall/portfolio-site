@@ -51,35 +51,42 @@ window.onload = (event) => {
     Bodies.rectangle(-offset, 300, 50.5, 600.5 + 2 * offset, options),
     Bodies.fromVertices(
       400,
-      400,
+      375,
       [
-        { x: 10, y: 0 },
-        { x: 25, y: 0 },
+        { x: 0, y: 0 },
+        { x: 10, y: -10 },
         { x: 25, y: 150 },
-        { x: 225, y: 160 },
-        { x: 25, y: 160 },
-        { x: 25, y: 300 },
-        { x: 45, y: 500 },
-        { x: -10, y: 500 },
-        { x: -10, y: 300 },
-        { x: -300, y: 250 },
-        { x: 5, y: 280 },
+        { x: 200, y: 120 },
+        { x: 200, y: 130 },
+        { x: 25, y: 180 },
+        { x: 25, y: 500 },
+        { x: 0, y: 500 },
+        { x: 0, y: 450 },
+        { x: -150, y: 410 },
+        { x: -150, y: 400 },
+        { x: 0, y: 430 },
+        { x: 0, y: 300 },
+        { x: -200, y: 220 },
+        { x: -200, y: 210 },
+        { x: 0, y: 280 },
       ],
       (options = {
         isStatic: true,
-        fillStyle: "#060a19",
+        render: {
+          fillStyle: "#060a19",
+          wireframes: false,
+        },
       })
     ),
   ]);
 
-  var stack = Composites.stack(5, 5, 5, 2, 75, 75, function (x, y) {
-    console.log(Common.random());
-    if (Common.random() < 0.2) {
+  var stack = Composites.stack(250, 0, 3, 3, 0, 0, function (x, y) {
+    if (Common.random(0, 10) < 3) {
       return Bodies.circle(x, y, 51, {
         density: 0.0005,
-        frictionAir: 0.06,
+        frictionAir: 0.001,
         restitution: 0.3,
-        friction: 0.01,
+        friction: 1,
         render: {
           sprite: {
             texture: "./img/experiments/flower-matter/flower100.png",
@@ -88,12 +95,12 @@ window.onload = (event) => {
           },
         },
       });
-    } else if (Common.random() < 0.3) {
+    } else if (Common.random(0, 10) < 5) {
       return Bodies.circle(x, y, 60, {
         density: 0.0005,
-        frictionAir: 0.06,
-        restitution: 0.3,
-        friction: 0.01,
+        frictionAir: 0.001,
+        restitution: 0.9,
+        friction: 1,
         render: {
           sprite: {
             texture: "./img/experiments/flower-matter/flower120.png",
@@ -102,12 +109,12 @@ window.onload = (event) => {
           },
         },
       });
-    } else if (Common.random() < 0.6) {
+    } else if (Common.random(0, 10) < 7) {
       return Bodies.circle(x, y, 27, {
         density: 0.0005,
-        frictionAir: 0.06,
-        restitution: 0.3,
-        friction: 0.01,
+        frictionAir: 0.5,
+        restitution: 0.9,
+        friction: 1,
         render: {
           sprite: {
             texture: "./img/experiments/flower-matter/flower54.png",
@@ -116,12 +123,12 @@ window.onload = (event) => {
           },
         },
       });
-    } else if (Common.random() < 0.8) {
+    } else if (Common.random(0, 10) < 9) {
       return Bodies.circle(x, y, 36, {
         density: 0.0005,
-        frictionAir: 0.06,
-        restitution: 0.3,
-        friction: 0.01,
+        frictionAir: 0.5,
+        restitution: 0.9,
+        friction: 1,
         render: {
           sprite: {
             texture: "./img/experiments/flower-matter/flower75.png",
@@ -130,12 +137,12 @@ window.onload = (event) => {
           },
         },
       });
-    } else if (Common.random() < 0.9) {
+    } else if (Common.random(0, 10) < 10) {
       return Bodies.circle(x, y, 36, {
         density: 0.0005,
-        frictionAir: 0.06,
-        restitution: 0.3,
-        friction: 0.01,
+        frictionAir: 0.5,
+        restitution: 0.9,
+        friction: 1,
         render: {
           sprite: {
             texture: "./img/experiments/flower-matter/flower82.png",
@@ -144,7 +151,7 @@ window.onload = (event) => {
           },
         },
       });
-    } else if (Common.random() > 0.5) {
+    } else if (Common.random(0, 10) > 0.5) {
       return;
     }
   });
