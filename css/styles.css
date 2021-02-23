@@ -199,7 +199,7 @@ main .entry-header {
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
-  background-color: #a0a0a0;
+  background-color: #efefef;
   position: -webkit-sticky;
   position: sticky;
   top: -1px;
@@ -213,10 +213,19 @@ main .entry-header h2 {
 }
 main .entry {
   background-color: transparent;
+}
+main .entry.padmax {
   padding: 10% 15%;
+}
+main .entry.padmin {
+  padding: 3% 5%;
 }
 main .entry.black {
   background-color: black;
+}
+main .entry video {
+  width: 100% !important;
+  height: auto !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
