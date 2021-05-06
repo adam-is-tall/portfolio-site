@@ -175,16 +175,31 @@ img {
   position: fixed;
   height: 100vh;
   padding: 5px;
+  word-break: break-word;
+  font-size: 14px;
+  text-align: center;
 }
 .sidebar .logo {
   padding: 7px;
 }
 .sidebar .middle-info {
   color: white;
+  padding: 5px;
   flex-grow: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 .sidebar .contact-info {
+  color: white;
   padding: 5px 5px 15px 5px;
+  font-size: 12px;
+}
+.sidebar .contact-info span {
+  display: block;
+  font-size: 22px;
+  font-weight: 100;
 }
 .sidebar .contact-info a {
   color: white;
@@ -213,6 +228,16 @@ main .entry-header h2 {
 }
 main .entry {
   background-color: transparent;
+}
+main .entry.multi-flex {
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+main .entry.multi-flex img {
+  width: 25%;
+  margin: 35px;
 }
 main .entry.padmax {
   padding: 10% 15%;
