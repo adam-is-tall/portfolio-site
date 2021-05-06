@@ -253,4 +253,10 @@ main .entry video {
   height: auto !important;
 }
 
+@media screen and (max-width: 600px) {
+  .mobile-hide {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
