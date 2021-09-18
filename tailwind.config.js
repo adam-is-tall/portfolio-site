@@ -16,7 +16,16 @@ module.exports = {
       jubilate: ["Jubliat"],
       base: ["Proxima Nova"],
     },
-    extend: {},
+    extend: {
+      spacing: {
+        xs : "0.25rem",
+        sm : "0.875rem",
+        md : "2.625rem",
+        lg: "5.25rem",
+        xl: "7.875rem",
+        '2xl': "10.5rem"
+      }
+    }
   },
   variants: {
     extend: {},
