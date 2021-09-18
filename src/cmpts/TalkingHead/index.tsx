@@ -56,7 +56,7 @@ export function TalkingHead(props: Props) {
 
     return () => window.clearInterval(id);
   }, [isScrolling]);
-  const xScale = direction === "left" ? 1 : -1;
+  const xScale = direction === "left" ? -1 : 1;
 
   return (
     <div style={style} className={className || "w-20"}>

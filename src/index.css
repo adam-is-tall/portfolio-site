@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 16px;
+}
+
 .font-big-buddy {
   font-family: jubilat, serif;
   font-weight: 400;
@@ -32,4 +36,9 @@
   font-weight: 300;
   line-height: 115%;
   font-size: 18px;
+}
+
+.debug {
+  border-width: 1px;
+  border-color: lime;
 }
