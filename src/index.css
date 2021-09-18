@@ -3,22 +3,25 @@
 @tailwind utilities;
 
 .font-big-buddy {
-  font-family: Jubliat;
-  font-weight: regular;
+  font-family: jubilat, serif;
+  font-weight: 400;
+  font-style: normal;
   line-height: 100%;
-  font-size: 72;
+  font-size: 72px;
 }
 
 .font-speech {
-  font-family: Proxima Nova;
-  font-weight: regular;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   line-height: 115%;
   font-size: 32px;
 }
 
 .font-base {
-  font-family: Proxima Nova;
-  font-weight: regular;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   line-height: 115%;
   font-size: 18px;
 }

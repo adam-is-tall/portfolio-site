@@ -10,7 +10,9 @@ export default function App() {
           <Block />
         </div>
 
-        <h3 className="">Hello world!!!!!</h3>
+        <h3 className="font-big-buddy">Hello big-buddy!!!!!</h3>
+        <h3 className="font-speech">Hello font-speech!!!!!</h3>
+        <h3 className="font-base">Hello font-base!!!!!</h3>
       </header>
     </div>
   );
