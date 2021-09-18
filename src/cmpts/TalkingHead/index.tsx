@@ -7,12 +7,19 @@ import oh2 from "./heads/open-oh-2.png";
 const frameChangeInterval = 0.5; // seconds
 const headFrames = [ah1, ah2, oh1, oh2];
 const availableIndices = headFrames.length - 1;
+const getNextIndex = (index: number) =>
+  index < availableIndices ? index + 1 : 0;
 
 interface Props {
   className?: string;
   style?: CSSProperties;
+  /**
+   * @default "left"
+   */
+  direction?: "right" | "left";
 }
-export function TalkingHead({ className = "", style }: Props) {
+export function TalkingHead(props: Props) {
+  const { className = "", style, direction = "left" } = props;
   const [frameIndex, setFrameIndex] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
   const timeoutRef = useRef<number>();
@@ -35,17 +42,30 @@ export function TalkingHead({ className = "", style }: Props) {
   useEffect(() => {
     if (!isScrolling) return;
 
-    const id = window.setInterval(() => {
-      const nextIndex = frameIndex < availableIndices ? frameIndex + 1 : 0;
-      setFrameIndex(nextIndex);
-    }, frameChangeInterval * 1000);
+    let hasExecuted = false;
+    if (!hasExecuted) {
+      setFrameIndex(getNextIndex);
+      console.log("leading setIndex fire!!");
+    }
+    hasExecuted = true;
+
+    const id = window.setInterval(
+      () => setFrameIndex(getNextIndex),
+      frameChangeInterval * 1000
+    );
 
     return () => window.clearInterval(id);
-  }, [frameIndex, isScrolling]);
+  }, [isScrolling]);
+  const xScale = direction === "left" ? 1 : -1;
 
   return (
     <div style={style} className={className || "w-20"}>
-      <img src={headFrames[frameIndex]} alt="" className="w-full" />
+      <img
+        style={{ transform: `scaleX(${xScale})` }}
+        src={headFrames[frameIndex]}
+        alt="Adams face"
+        className="w-full"
+      />
     </div>
   );
 }
