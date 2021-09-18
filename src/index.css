@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 16px;
+}
+
 .font-big-buddy {
   font-family: jubilat, serif;
   font-weight: 400;
@@ -44,12 +48,27 @@
 }
 
 @media screen and (min-width: 510px) {
-  .font-big-buddy {font-size: 48px;}
-  .font-base {font-size: 16px;}
+  .font-big-buddy {
+    font-size: 48px;
+  }
+  .font-base {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 990px) {
-  .font-big-buddy {font-size: 72px;}
-  .font-base {font-size: 18px;}
-  .font-btn {font-size: 52px;}
+  .font-big-buddy {
+    font-size: 72px;
+  }
+  .font-base {
+    font-size: 18px;
+  }
+  .font-btn {
+    font-size: 52px;
+  }
+}
+
+.debug {
+  border-width: 1px;
+  border-color: lime;
 }
