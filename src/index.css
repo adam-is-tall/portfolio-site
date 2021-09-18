@@ -7,7 +7,7 @@
   font-weight: 400;
   font-style: normal;
   line-height: 100%;
-  font-size: 72px;
+  font-size: 32px;
 }
 
 .font-little-buddy {
@@ -26,10 +26,30 @@
   font-size: 32px;
 }
 
+.font-btn {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 115%;
+  font-size: 32px;
+  color: white;
+}
+
 .font-base {
   font-family: proxima-nova, sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: 115%;
-  font-size: 18px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 510px) {
+  .font-big-buddy {font-size: 48px;}
+  .font-base {font-size: 16px;}
+}
+
+@media screen and (min-width: 990px) {
+  .font-big-buddy {font-size: 72px;}
+  .font-base {font-size: 18px;}
+  .font-btn {font-size: 52px;}
 }
