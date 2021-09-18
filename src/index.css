@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-big-buddy {
+  font-family: Jubliat;
+  font-weight: regular;
+  line-height: 100%;
+  font-size: 72;
+}
+
+.font-speech {
+  font-family: Proxima Nova;
+  font-weight: regular;
+  line-height: 115%;
+  font-size: 32px;
+}
+
+.font-base {
+  font-family: Proxima Nova;
+  font-weight: regular;
+  line-height: 115%;
+  font-size: 18px;
+}
