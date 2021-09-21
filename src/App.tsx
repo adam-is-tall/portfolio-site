@@ -23,15 +23,17 @@ export default function App() {
     <div className="flex">
       {/* Left Nav */}
       <div className="hidden sm:block sm:w-20 md:w-24 bg-coral"></div>
-      <div className="fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-center sm:justify-between sm:h-screen p-sm border-r-2 border-aqua bg-gradient-to-t md:bg-gradient-to-l from-aqua-light via-aqua-light to-aqua-light">
+      <div className="fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between sm:h-screen p-sm border-r-2 border-aqua bg-gradient-to-t md:bg-gradient-to-l from-aqua-light via-aqua-light to-aqua-light">
        <LogoVert className="w-full hidden sm:block"/>
        <LogoSide className="w-10 block sm:hidden"/>
        <div className="w-full hidden sm:block">
           <h1 className="font-little-buddy text-center">Adam Howard</h1>
           <img src={SketchLine}/>
-          <h1 className="font-tiny text-center py-xs">RESUME</h1>
-          <h1 className="font-tiny text-center py-xs">CONTACT</h1>
+          {/* <h1 className="font-tiny text-center py-xs">RESUME</h1> */}
+          <h1 className="font-tiny text-center py-xs">UX DESIGN</h1>
        </div>
+       <h1 className="font-tiny text-center py-xs">CONTACT</h1>
+
       </div> 
       {/* Page Container */}
       <div className="container mx-auto">
@@ -42,7 +44,7 @@ export default function App() {
           <DesignPlanning className="w-full mb-xs md:mb-sm"/>
           <h2 className="font-big-buddy">Design Planning</h2>
           <p className="font-base lg:px-xl">I believe this is a critical step in the design process. It’s quick, inexpensive, and disposable. It can provide the appropriate level of refinement for the current stage and provide a catalyst for conversations between stakeholders</p>
-          <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-3 grid-rows-1 gap-sm p-sm sm:p-md text-center">
+          <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-3 grid-rows-1 gap-sm p-sm text-center">
             <img src={Sketch1}/>
             <img src={Sketch2}/>
             {/* <img src={Sketch3}/> */}
@@ -53,8 +55,8 @@ export default function App() {
         <div className="flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-2xl text-center">
           <DesignInterface className="w-full mb-xs md:mb-sm"/>
           <h2 className="font-big-buddy">Interface Design</h2>
-          <p className="font-base lg:px-xl">Protoyping, Divergent Thinking, Iteration using modern tools.</p>
-          <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-sm p-sm sm:p-md text-center">
+          <p className="font-base lg:px-xl">I bring creativity into enumerating meaningfully distinct options from which to choose. From prototypes to high-fidelity designs.</p>
+          <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-sm p-sm text-center">
             <img src={Portfolio1}/>
             <img src={Portfolio2}/>
             <img src={Portfolio3}/>
@@ -73,8 +75,8 @@ export default function App() {
           <ChatBubble className="mb-3xl">I'm in the middle of talking with this nice person. Be patient and we'll talk about it soon.</ChatBubble>
           <ChatBubble className="mb-3xl">So if you're interested in working together, let’s have a chat! Thanks for your time!</ChatBubble>
 
-          <div className="flex flex-col p-md py-xl text-center">
-            <div className="flex flex-row items-center justify-center w-full space-x-sm">
+          <div className="flex flex-col sm:p-md sm:py-xl text-center">
+            <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm">
               <Button text="Email Me"/>
               <Button text="Connect on LinkedIn"/>
             </div>
