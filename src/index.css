@@ -27,7 +27,7 @@ html {
   font-style: normal;
   font-weight: 300;
   line-height: 115%;
-  font-size: 32px;
+  font-size: 22px;
 }
 
 .font-btn {
@@ -35,8 +35,7 @@ html {
   font-style: normal;
   font-weight: 300;
   line-height: 115%;
-  font-size: 32px;
-  color: white;
+  font-size: 20px;
 }
 
 .font-base {
@@ -47,12 +46,23 @@ html {
   font-size: 14px;
 }
 
+.font-tiny {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 115%;
+  font-size: 12px;
+}
+
 @media screen and (min-width: 510px) {
   .font-big-buddy {
     font-size: 48px;
   }
   .font-base {
     font-size: 16px;
+  }
+  .font-speech {
+    font-size: 28px;
   }
 }
 
@@ -64,7 +74,10 @@ html {
     font-size: 18px;
   }
   .font-btn {
-    font-size: 52px;
+    font-size: 26px;
+  }
+  .font-speech {
+    font-size: 32px;
   }
 }
 

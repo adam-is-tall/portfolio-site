@@ -13,30 +13,28 @@ interface Props {
    */
   direction?: "left" | "right";
 }
-export default function ChatBubble(props: Props) {
+export function ChatBubble(props: Props) {
   const { children = null, style, className = "", direction = "left" } = props;
   const left = direction === "left";
   const right = direction === "right";
   return (
-    <div style={style} className={`bg-coral-light p-lg relative ${className}`}>
+    <div style={style} className={`bg-coral-light p-md lg:p-lg text-left relative ${className}`}>
       <p className="text-black font-speech">{children}</p>
       {left && (
-        <div className="absolute" style={{ bottom: -80, left: 180 }}>
-          <ArrowLeft style={{ width: 150 }} />
+        <div className="absolute" style={{ bottom: -60, left: 180 }}>
+          <ArrowLeft className="w-28 sm:w-32" />
           <TalkingHead
             direction="left"
-            className="absolute"
-            style={{ left: -180, bottom: -80, width: 170 }}
+            className="absolute transform -translate-y-1/2 -translate-x-full w-32 lg:w-48"
           />
         </div>
       )}
       {right && (
-        <div className="absolute" style={{ bottom: -80, left: 180 }}>
-          <ArrowLeft style={{ width: 150 }} />
+        <div className="absolute" style={{ bottom: -60, right: 180 }}>
+          <ArrowRight className="w-20 sm:w-32" />
           <TalkingHead
             direction="right"
-            className="absolute"
-            style={{ left: -180, bottom: -80, width: 170 }}
+            className="absolute transform -translate-y-1/2 translate-x-full lg:translate-x-3/4 w-32 lg:w-48"
           />
         </div>
       )}
