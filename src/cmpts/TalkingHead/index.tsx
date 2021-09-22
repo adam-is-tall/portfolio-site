@@ -59,7 +59,7 @@ export function TalkingHead(props: Props) {
   const xScale = direction === "left" ? -1 : 1;
 
   return (
-    <div style={style} className={className || ""}>
+    <div style={style} className={className || "w-20"}>
       <img
         style={{ transform: `scaleX(${xScale})` }}
         src={headFrames[frameIndex]}
