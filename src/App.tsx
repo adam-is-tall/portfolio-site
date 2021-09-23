@@ -78,7 +78,7 @@ export default function App() {
         </div>
         <div className="p-md py-lg sm:p-lg md:p-2xl">
           <ChatBubble className="mb-3xl">Right now, I’m looking to help a team make great products for kids and families. I am helping raise two kids and I care deeply about the challenges and opportunities to use technology to improve their lives. So if..</ChatBubble>
-          <ChatBubble className="mb-3xl w-3/4" direction="right">Dad, Can I have a 50 hundred dollars?</ChatBubble>
+          <ChatBubble className="mb-3xl w-3/4" direction="right" color="dark">Dad, Can I have a 50 hundred dollars?</ChatBubble>
           <ChatBubble className="mb-3xl">I'm in the middle of talking with this nice person. Be patient and we'll talk about it soon.</ChatBubble>
           <ChatBubble className="mb-3xl">So if you're interested in working together, get in touch! You can find me on LinkedIn or just send me an email.</ChatBubble>
 
@@ -95,7 +95,7 @@ export default function App() {
           This site was built with Figma, React, my iPhone, and my cousin. I'm not even sure I need this
         </div> */}
       </div>
-      <Project title={projects.test.title} description={projects.test.description} images={projects.test.images} captions={projects.test.captions}/>
+      {/* <Project title={projects.test.title} description={projects.test.description} images={projects.test.images} captions={projects.test.captions}/> */}
     </div>
   );
 }

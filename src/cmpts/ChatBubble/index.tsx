@@ -12,13 +12,16 @@ interface Props {
    * @default "left"
    */
   direction?: "left" | "right";
+  color?: "dark" | "light";
 }
 export function ChatBubble(props: Props) {
-  const { children = null, style, className = "", direction = "left" } = props;
+  const { children = null, style, className = "", direction = "left", color = "light" } = props;
   const left = direction === "left";
   const right = direction === "right";
+  const dark = color === "dark";
+  const light = color === "light";
   return (
-    <div style={style} className={`bg-coral-light p-md lg:p-lg text-left relative ${className}`}>
+    <div style={style} className={`p-md lg:p-lg text-left relative ${className} ${dark ? 'bg-magenta-light' : 'bg-coral-light'}`}>
       <p className="text-black font-speech">{children}</p>
       {left && (
         <div className="absolute" style={{ bottom: -60, left: 180 }}>
