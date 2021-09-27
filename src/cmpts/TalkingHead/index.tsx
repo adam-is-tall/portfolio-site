@@ -6,10 +6,6 @@ import oh2 from "./heads/open-oh-2.png";
 
 const frameChangeInterval = 0.5; // seconds
 const headFrames = [ah1, ah2, oh1, oh2];
-const availableIndices = headFrames.length - 1;
-const getNextIndex = (index: number) =>
-  index < availableIndices ? index + 1 : 0;
-
 interface Props {
   className?: string;
   style?: CSSProperties;
@@ -17,12 +13,17 @@ interface Props {
    * @default "left"
    */
   direction?: "right" | "left";
+  frames?: string[]
 }
 export function TalkingHead(props: Props) {
-  const { className = "", style, direction = "left" } = props;
+  const { className = "", style, direction = "left", frames = headFrames } = props;
   const [frameIndex, setFrameIndex] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
   const timeoutRef = useRef<number>();
+
+  const availableIndices = frames.length - 1;
+  const getNextIndex = (index: number) =>
+    index < availableIndices ? index + 1 : 0;
 
   useEffect(() => {
     function handleScrollEvent(e: Event) {
@@ -45,7 +46,6 @@ export function TalkingHead(props: Props) {
     let hasExecuted = false;
     if (!hasExecuted) {
       setFrameIndex(getNextIndex);
-      console.log("leading setIndex fire!!");
     }
     hasExecuted = true;
 
@@ -62,7 +62,7 @@ export function TalkingHead(props: Props) {
     <div style={style} className={className || "w-20"}>
       <img
         style={{ transform: `scaleX(${xScale})` }}
-        src={headFrames[frameIndex]}
+        src={frames[frameIndex]}
         alt="Adams face"
         className="w-full"
       />
