@@ -2,13 +2,13 @@ interface Props {
   title: string;
   description: string;
   images: string[];
-  //background: string;
-  captions: string[];
+  background: string;
+  caption: string;
   onClose: () => void;
 }
 
 export function Project(props: Props) {
-  const { title = "", description, images = [], onClose } = props;
+  const { title = "", description, caption, images = [], onClose, background } = props;
   const show = !!title;
 
   return (
@@ -24,19 +24,19 @@ export function Project(props: Props) {
     >
       <div className={`text-center ${show ? "p-sm md:p-lg" : ""}`}>
         <h2 className="font-medium-buddy mb-sm">{title}</h2>
-        <p className="font-tiny mb-sm">{title}</p>
+        <p className="font-tiny mb-sm">{caption}</p>
         <p className="font-base mb-sm">{description}</p>
       </div>
-      <div className="text-center">
+      <div className="text-center test" style={{backgroundImage: `url(${background})`, backgroundSize: 'contain', backgroundAttachment: "fixed"}}>
         {images.map((url) => (
-          <img className="border-b-2 border-white" src={url} />
+          <div className="bg-white bg-opacity-20"><img className="" src={url} /></div>
         ))}
       </div>
       <div
         style={{ cursor: "pointer", display: show ? "block" : "none" }}
-        className="w-full h-24 bg-magenta"
+        className="w-full h-24 bg-aqua-light flex"
         onClick={onClose}
-      ></div>
+      >CLOSE</div>
     </div>
   );
 }

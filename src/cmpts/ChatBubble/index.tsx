@@ -13,9 +13,10 @@ interface Props {
    */
   direction?: "left" | "right";
   color?: "dark" | "light";
+  frames?: string[];
 }
 export function ChatBubble(props: Props) {
-  const { children = null, style, className = "", direction = "left", color = "light" } = props;
+  const { children = null, style, className = "", direction = "left", color = "light", frames } = props;
   const left = direction === "left";
   const right = direction === "right";
   const dark = color === "dark";
@@ -25,18 +26,20 @@ export function ChatBubble(props: Props) {
       <p className="text-black font-speech">{children}</p>
       {left && (
         <div className="absolute" style={{ bottom: -60, left: 180 }}>
-          <ArrowLeft className="w-28 sm:w-32" />
+          <ArrowLeft className="w-20 md:w-32 relative -top-3 md:-top-0" />
           <TalkingHead
             direction="left"
+            frames={frames}
             className="absolute transform -translate-y-1/2 -translate-x-full w-32 lg:w-48"
           />
         </div>
       )}
       {right && (
         <div className="absolute" style={{ bottom: -60, right: 180 }}>
-          <ArrowRight className="w-20 sm:w-32" />
+          <ArrowRight className="w-20 md:w-32 -top-3 md:-top-0" />
           <TalkingHead
             direction="right"
+            frames={frames}
             className="absolute transform -translate-y-1/2 translate-x-full lg:translate-x-3/4 w-32 lg:w-48"
           />
         </div>

@@ -18,6 +18,18 @@ import { Project } from "./cmpts/Project";
 import { ChatBubble } from "./cmpts/ChatBubble";
 
 import SketchLine from "./assets/img/sketch-line.png";
+import shapeStack from "./assets/img/shape-group.svg";
+import ah1 from "./assets/img/heads/open-ah-1.png";
+import ah2 from "./assets/img/heads/open-ah-2.png";
+import oh1 from "./assets/img/heads/open-oh-1.png";
+import oh2 from "./assets/img/heads/open-oh-2.png";
+import r from "./assets/img/heads/open-r.png";
+import closed from "./assets/img/heads/closed-2.png";
+import distracted from "./assets/img/heads/distracted.png";
+
+const adamHeads1 = [ah1, ah2, oh1, r];
+const adamHeads2 = [oh1 , ah2];
+const adamHeads3 = [closed, distracted, r, ah1];
 
 type ProjectNames = "headGame" | "homeBank";
 
@@ -37,20 +49,24 @@ export default function App() {
       <div className="hidden sm:block sm:w-20 md:w-24 bg-coral"></div>
       <div className={`z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 transition-colors transform duration-500 ease-in-out ${showCloseAction ? "border-gray bg-gray-light" : "border-aqua bg-aqua-light"}`}>
       {/* <div className="z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 border-aqua bg-aqua-light"> */}
-        <div className="flex flex-row sm:flex-col">
-          <div
-            style={{
-              cursor: "pointer",
-              height: showCloseAction ? undefined : 0,
-              transitionProperty: "height",
-              transitionDuration: "500ms",
-              transitionTimingFunction: "ease-out",
-            }}
-            className="w-full sm:h-20 bg-magenta mr-sm sm:mb-sm sm:ml-0"
-            onClick={closeProject}
-          />
+        <div className="">
+          <div className="px-sm">
+            <svg 
+              style={{
+                cursor: "pointer",
+                height: showCloseAction ? undefined : 0,
+                transitionProperty: "height",
+                transitionDuration: "500ms",
+                transitionTimingFunction: "ease-out",
+              }}
+              className="w-full sm:h-20 mr-sm sm:mb-sm sm:ml-0 self-center"
+              onClick={closeProject} width="55" height="48" viewBox="0 0 55 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M53 24L4 24" stroke="#333333" stroke-width="4" stroke-linecap="round"/>
+              <path d="M23 46L2.42184 25.0364C2.28811 24.9004 2.18202 24.7388 2.10964 24.561C2.03726 24.3832 2 24.1925 2 24C2 23.8075 2.03726 23.6168 2.10964 23.439C2.18202 23.2612 2.28811 23.0996 2.42184 22.9636L23 2" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
+          </div>
           <LogoVert className={`w-full hidden sm:block ${projectIsOpen ? "invisible" : "visible"}`}/>
-          <LogoSide className={`w-20 block sm:hidden ${projectIsOpen ? "invisible" : "visible"}`}/>
+          <LogoSide className={`w-10 sm:w-20 block sm:hidden ${projectIsOpen ? "invisible" : "visible"}`}/>
         </div>
 
         <div className="w-full hidden sm:block">
@@ -62,7 +78,7 @@ export default function App() {
       </div>
       {/* Page Container */}
       <div className={`container mx-auto transition delay-500 ${showCloseAction ? "opacity-0" : "opacity-100"}`}>
-        <div className="flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-2xl text-center">
+        <div className="flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
           <ChatBubble direction="right">
             Hello! My name is Adam. I’ve designed things on the internet for 16
             years. I should be tired of it by now, but I’m not! I still love the
@@ -78,14 +94,9 @@ export default function App() {
             refinement for the current stage and provide a catalyst for
             conversations between stakeholders
           </p>
-          {/* <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-3 grid-rows-1 gap-sm p-sm text-center">
-            <img src={Sketch1}/>
-            <img src={Sketch2}/>
-            <img src={Sketch4}/>
-          </div> */}
         </div>
 
-        <div className="flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-2xl text-center">
+        <div className="flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
           <DesignInterface className="w-full mb-xs md:mb-sm" />
           <h2 className="font-big-buddy">Interface Design</h2>
           <p className="font-base lg:px-xl">
@@ -94,7 +105,7 @@ export default function App() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-2xl text-center">
+        <div className="flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
           <DesignSystem className="w-full mb-xs md:mb-sm" />
           <h2 className="font-big-buddy">Design Systems</h2>
           <p className="font-base lg:px-xl">
@@ -105,10 +116,16 @@ export default function App() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-2xl text-center">
-          <ChatBubble>Take a look at some of my work!</ChatBubble>
+        <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
+          <ChatBubble className="mb-lg" frames={adamHeads2}>Take a look at some of my work!</ChatBubble>
         </div>
         <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-sm p-sm text-center">
+          <img
+            style={{ cursor: "pointer" }}
+            src={Portfolio4}
+            className="transition duration-700 ease-in-out transform hover:scale-95"
+            onClick={() => setProjectName("homeBank")}
+          />
           <img
             style={{ cursor: "pointer" }}
             src={Portfolio1}
@@ -127,33 +144,28 @@ export default function App() {
             className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("headGame")}
           />
-          <img
-            style={{ cursor: "pointer" }}
-            src={Portfolio4}
-            className="transition duration-700 ease-in-out transform hover:scale-95"
-            onClick={() => setProjectName("homeBank")}
-          />
+          
         </div>
-        <div className="p-md py-lg sm:p-lg md:p-2xl">
+        <div className="p-md py-lg sm:p-lg md:p-lg lg:p-2xl">
           <ChatBubble className="mb-3xl">
             Right now, I’m looking to help a team make great products for kids
             and families. I am helping raise two kids and I care deeply about
             the challenges and opportunities to use technology to improve their
             lives. So if..
           </ChatBubble>
-          <ChatBubble className="mb-3xl w-3/4" direction="right">
+          <ChatBubble className="mb-3xl sm:w-3/4" direction="right">
             Dad, Can I have a 50 hundred dollars?
           </ChatBubble>
-          <ChatBubble className="mb-3xl">
+          <ChatBubble frames={adamHeads3} className="mb-3xl">
             I'm in the middle of talking with this nice person. Be patient and
             we'll talk about it soon.
           </ChatBubble>
-          <ChatBubble className="mb-3xl">
-            So if you're interested in working together, get in touch! You can
-            find me on LinkedIn or just send me an email.
-          </ChatBubble>
 
-          <div className="flex flex-col sm:p-md sm:py-xl text-center">
+          <div className="flex flex-col sm:py-lg text-center">
+            <ChatBubble className="mb-3xl">
+              So if you're interested in working together, get in touch! You can
+              find me on LinkedIn or just send me an email.
+            </ChatBubble>
             <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm">
               <Button text="Email Me" />
               <Button text="Connect on LinkedIn" />
@@ -161,14 +173,15 @@ export default function App() {
             <p className="font-base px-md"></p>
           </div>
         </div>
-
+        <img className="mx-auto" src={shapeStack} />
       </div>
+      
       <Project
         title={project?.title}
         description={project?.description}
         images={project?.images}
-        //background={project?.background}
-        captions={project?.captions}
+        background={project?.background}
+        caption={project?.caption}
         onClose={closeProject}
       />
     </div>
@@ -179,7 +192,8 @@ interface TProject {
   title: string;
   description: string;
   images: string[];
-  captions: string[];
+  caption: string;
+  background: string;
 }
 type Projects = { [key in ProjectNames]: TProject };
 var projects: Projects = {
@@ -188,15 +202,15 @@ var projects: Projects = {
     description:
       "After learning about the life and journey of basketball legend Bill Walton, I put together some concepts for a service that takes the meditation training of Headspace and embeds it in the world of basketball. When I played basketball as a kid and a high school student, I wish there were programs like this to help me deal with the anxiety and pressure - both internal and external. And with the movement led by Simone Biles and Naomi Osaka, it's now becoming part of our collective conciousness. It's proven that sports can help kids learn life skills beyond the game - like teamwork and sportsmanship, but the potential for mindfullness seems to be untapped. The design of this product leans heavily on non-tradtional aesthetics. The color pallette and graphics are a nod to the ... ",
     images: [Portfolio1, Portfolio1, Portfolio1],
-    //background: "",
-    captions: ["test1", "test2", "test3"],
+    background: BankBg,
+    caption: "Prototype, Hi-Fidelity Mockups",
   },
   homeBank: {
     title: "Home Bank",
     description:
       "Financial app for kids based on a great book called 'First National Bank of Dad'. Alot of these services have popped up over the past 5 years, so I combined the idea of teaching kids about compound interest and blah blah",
     images: [Bank1, Bank2, Bank3],
-    //background: "",
-    captions: ["test1", "test2", "test3"],
+    background: BankBg,
+    caption: "Prototype, Hi-Fidelity Mockups",
   },
 };

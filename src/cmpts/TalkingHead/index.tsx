@@ -1,11 +1,12 @@
 import { useEffect, useState, CSSProperties, useRef } from "react";
-import ah1 from "./heads/open-ah-1.png";
-import ah2 from "./heads/open-ah-2.png";
-import oh1 from "./heads/open-oh-1.png";
-import oh2 from "./heads/open-oh-2.png";
+import ah1 from "../../assets/img/heads/open-ah-1.png";
+import ah2 from "../../assets/img/heads/open-ah-2.png";
+import oh1 from "../../assets/img/heads/open-oh-1.png";
+import oh2 from "../../assets/img/heads/open-oh-2.png";
+import r from "../../assets/img/heads/open-r.png";
 
 const frameChangeInterval = 0.5; // seconds
-const headFrames = [ah1, ah2, oh1, oh2];
+const headFrames = [ah1, ah2, oh2];
 interface Props {
   className?: string;
   style?: CSSProperties;
