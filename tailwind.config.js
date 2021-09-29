@@ -11,6 +11,7 @@ module.exports = {
       royal: { DEFAULT: "#1F6D99", light: "#7CCEFC" },
       black: "#000",
       white: "#fff",
+      gray: { DEFAULT: "#B1B1B1", light: "#F2F2F2", dark: "#555555" },
     },
     fontFamily: {
       // sans: ["Graphik", "sans-serif"],

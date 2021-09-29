@@ -8,18 +8,18 @@ import { ReactComponent as DesignPlanning } from "./assets/img/design-planning.s
 import Portfolio1 from "./assets/img/p-mindfullness.jpg";
 import Portfolio2 from "./assets/img/p-gn.jpg";
 import Portfolio3 from "./assets/img/p-mya.jpg";
-import Portfolio4 from "./assets/img/p-bod.jpg";
-import Sketch1 from "./assets/img/p-sketch1.jpg";
-import Sketch2 from "./assets/img/p-sketch2.jpg";
-import Sketch3 from "./assets/img/p-sketch3.jpg";
-import Sketch4 from "./assets/img/p-sketch4.jpg";
+import Portfolio4 from "./assets/img/p-bod-2.png";
+import BankBg from "./assets/img/p-bod-bg.jpg";
+import Bank1 from "./assets/img/p-bod-1.png";
+import Bank2 from "./assets/img/p-bod-2.png";
+import Bank3 from "./assets/img/p-bod-3.png";
 import { Button } from "./cmpts/Button";
 import { Project } from "./cmpts/Project";
 import { ChatBubble } from "./cmpts/ChatBubble";
 
 import SketchLine from "./assets/img/sketch-line.png";
 
-type ProjectNames = "headGame" | "nextProjectName";
+type ProjectNames = "headGame" | "homeBank";
 
 export default function App() {
   const [projectName, setProjectName] = useState<ProjectNames | null>(null);
@@ -35,7 +35,7 @@ export default function App() {
     <div className="flex">
       {/* Left Nav */}
       <div className="hidden sm:block sm:w-20 md:w-24 bg-coral"></div>
-      <div className={`z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 transition-colors transform duration-500 ease-in-out ${showCloseAction ? "border-aqua bg-aqua-light" : "border-aqua bg-aqua-light"}`}>
+      <div className={`z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 transition-colors transform duration-500 ease-in-out ${showCloseAction ? "border-gray bg-gray-light" : "border-aqua bg-aqua-light"}`}>
       {/* <div className="z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 border-aqua bg-aqua-light"> */}
         <div className="flex flex-row sm:flex-col">
           <div
@@ -131,7 +131,7 @@ export default function App() {
             style={{ cursor: "pointer" }}
             src={Portfolio4}
             className="transition duration-700 ease-in-out transform hover:scale-95"
-            onClick={() => setProjectName("headGame")}
+            onClick={() => setProjectName("homeBank")}
           />
         </div>
         <div className="p-md py-lg sm:p-lg md:p-2xl">
@@ -167,6 +167,7 @@ export default function App() {
         title={project?.title}
         description={project?.description}
         images={project?.images}
+        //background={project?.background}
         captions={project?.captions}
         onClose={closeProject}
       />
@@ -187,13 +188,15 @@ var projects: Projects = {
     description:
       "After learning about the life and journey of basketball legend Bill Walton, I put together some concepts for a service that takes the meditation training of Headspace and embeds it in the world of basketball. When I played basketball as a kid and a high school student, I wish there were programs like this to help me deal with the anxiety and pressure - both internal and external. And with the movement led by Simone Biles and Naomi Osaka, it's now becoming part of our collective conciousness. It's proven that sports can help kids learn life skills beyond the game - like teamwork and sportsmanship, but the potential for mindfullness seems to be untapped. The design of this product leans heavily on non-tradtional aesthetics. The color pallette and graphics are a nod to the ... ",
     images: [Portfolio1, Portfolio1, Portfolio1],
+    //background: "",
     captions: ["test1", "test2", "test3"],
   },
-  nextProjectName: {
-    title: "Head in the Game",
+  homeBank: {
+    title: "Home Bank",
     description:
-      "After learning about the life and journey of basketball legend Bill Walton, I put together some concepts for a service that takes the meditation training of Headspace and embeds it in the world of basketball. When I played basketball as a kid and a high school student, I wish there were programs like this to help me deal with the anxiety and pressure - both internal and external. And with the movement led by Simone Biles and Naomi Osaka, it's now becoming part of our collective conciousness. It's proven that sports can help kids learn life skills beyond the game - like teamwork and sportsmanship, but the potential for mindfullness seems to be untapped. The design of this product leans heavily on non-tradtional aesthetics. The color pallette and graphics are a nod to the ... ",
-    images: [Portfolio1, Portfolio1, Portfolio1],
+      "Financial app for kids based on a great book called 'First National Bank of Dad'. Alot of these services have popped up over the past 5 years, so I combined the idea of teaching kids about compound interest and blah blah",
+    images: [Bank1, Bank2, Bank3],
+    //background: "",
     captions: ["test1", "test2", "test3"],
   },
 };

@@ -2,6 +2,7 @@ interface Props {
   title: string;
   description: string;
   images: string[];
+  //background: string;
   captions: string[];
   onClose: () => void;
 }
