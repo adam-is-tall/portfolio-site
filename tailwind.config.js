@@ -7,7 +7,7 @@ module.exports = {
       current: "currentColor",
       magenta: { DEFAULT: "#FD408D", light: "#FFC5DC" },
       coral: { DEFAULT: "#FF8472", light: "#FFDED9" },
-      aqua: { DEFAULT: "#60FFE2", light: "#C5FFF4" },
+      aqua: { DEFAULT: "#60FFE2", light: "#C5FFF4", dark: "#41a08f" },
       royal: { DEFAULT: "#1F6D99", light: "#7CCEFC" },
       black: "#000",
       white: "#fff",

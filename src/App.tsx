@@ -25,41 +25,43 @@ export default function App() {
   const [projectName, setProjectName] = useState<ProjectNames | null>(null);
   const project = projects[projectName as ProjectNames];
   const showCloseAction = !!project?.title;
+  var projectIsOpen = !!project?.title;
   function closeProject() {
     setProjectName(null);
+    console.log("projectIsOpen: " + projectIsOpen)
   }
 
   return (
     <div className="flex">
       {/* Left Nav */}
       <div className="hidden sm:block sm:w-20 md:w-24 bg-coral"></div>
-      <div className="z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 border-aqua bg-aqua-light">
+      <div className={`z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 transition-colors transform duration-500 ease-in-out ${showCloseAction ? "border-aqua bg-aqua-light" : "border-aqua bg-aqua-light"}`}>
+      {/* <div className="z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 border-aqua bg-aqua-light"> */}
         <div className="flex flex-row sm:flex-col">
           <div
             style={{
               cursor: "pointer",
               height: showCloseAction ? undefined : 0,
               transitionProperty: "height",
-              transitionDuration: "100ms",
+              transitionDuration: "500ms",
               transitionTimingFunction: "ease-out",
             }}
             className="w-full sm:h-20 bg-magenta mr-sm sm:mb-sm sm:ml-0"
             onClick={closeProject}
           />
-          <LogoVert className="w-full hidden sm:block" />
-          <LogoSide className="w-20 block sm:hidden" />
+          <LogoVert className={`w-full hidden sm:block ${projectIsOpen ? "invisible" : "visible"}`}/>
+          <LogoSide className={`w-20 block sm:hidden ${projectIsOpen ? "invisible" : "visible"}`}/>
         </div>
 
         <div className="w-full hidden sm:block">
           <h1 className="font-little-buddy text-center">Adam Howard</h1>
           <img src={SketchLine} />
-          {/* <h1 className="font-tiny text-center py-xs">RESUME</h1> */}
           <h1 className="font-tiny text-center py-xs">UX DESIGN</h1>
         </div>
         <h1 className="font-tiny text-center py-xs">CONTACT</h1>
       </div>
       {/* Page Container */}
-      <div className="container mx-auto">
+      <div className={`container mx-auto transition delay-500 ${showCloseAction ? "opacity-0" : "opacity-100"}`}>
         <div className="flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-2xl text-center">
           <ChatBubble direction="right">
             Hello! My name is Adam. I’ve designed things on the internet for 16
@@ -110,21 +112,25 @@ export default function App() {
           <img
             style={{ cursor: "pointer" }}
             src={Portfolio1}
+            className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("headGame")}
           />
           <img
             style={{ cursor: "pointer" }}
             src={Portfolio2}
+            className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("headGame")}
           />
           <img
             style={{ cursor: "pointer" }}
             src={Portfolio3}
+            className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("headGame")}
           />
           <img
             style={{ cursor: "pointer" }}
             src={Portfolio4}
+            className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("headGame")}
           />
         </div>
@@ -156,9 +162,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* <div className="flex flex-col items-center space-y-sm p-sm text-center">
-          This site was built with Figma, React, my iPhone, and my cousin. I'm not even sure I need this
-        </div> */}
       </div>
       <Project
         title={project?.title}
