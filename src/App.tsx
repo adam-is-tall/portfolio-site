@@ -127,7 +127,7 @@ export default function App() {
           <DesignSystem className="w-full mb-xs md:mb-sm" />
           <h2 className="font-big-buddy mb-sm">Design Systems</h2>
           <p className="font-speech lg:px-md">
-          I understand that design work isn't done once something has shipped. I enjoy working with engineering and design teams to make sure design systems are well organized, documented, and implemented - using tools like Figma, Storybook, and Github.
+          I understand that design work isn't done once something has shipped. I enjoy working with engineering and design teams to make sure design systems are well documented, implemented, and maintained - using tools like Figma, Storybook, and Github.
           </p>
           <img className="absolute right-0 -bottom-16 w-32 md:w-60" src={sketchShow} />
         </div>
