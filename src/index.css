@@ -5,6 +5,22 @@
 html {
   font-size: 16px;
 }
+.dot-bg {
+  background-image: url('assets/img/grid-repeater.png');
+  background-repeat: repeat;
+  background-size: 30px 30px;
+  background-attachment: fixed;
+}
+.tiny-button {
+  background-color: #1f6d99;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 4px;
+}
+.tiny-button:hover {
+  background-color: #ff8572;
+  color: black;
+}
 
 .font-big-buddy {
   font-family: jubilat, serif;
@@ -43,7 +59,7 @@ html {
   font-style: normal;
   font-weight: 300;
   line-height: 115%;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .font-btn {
@@ -82,7 +98,7 @@ html {
   }
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1024px) {
   .font-big-buddy {
     font-size: 72px;
   }

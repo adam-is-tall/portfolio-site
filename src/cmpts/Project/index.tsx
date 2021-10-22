@@ -1,3 +1,5 @@
+import { Button } from "../Button";
+
 interface Props {
   title: string;
   description: string;
@@ -32,11 +34,13 @@ export function Project(props: Props) {
           <div className="bg-white bg-opacity-20"><img className="" src={url} /></div>
         ))}
       </div>
-      <div
+      {/* <div
         style={{ cursor: "pointer", display: show ? "block" : "none" }}
-        className="w-full h-24 bg-aqua-light flex"
+        className="w-full h-24 flex justify-center"
         onClick={onClose}
-      >CLOSE</div>
+      >
+        <Button className="m-auto z-10" text="Close" />
+      </div> */}
     </div>
   );
 }

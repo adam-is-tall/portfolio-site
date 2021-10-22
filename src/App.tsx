@@ -3,22 +3,38 @@ import { ReactComponent as LogoVert } from "./assets/img/AH-vert.svg";
 import { ReactComponent as LogoHoriz } from "./assets/img/AH-horiz.svg";
 import { ReactComponent as LogoSide } from "./assets/img/AH-sidebyside.svg";
 import { ReactComponent as DesignSystem } from "./assets/img/design-system.svg";
-import { ReactComponent as DesignInterface } from "./assets/img/design-interface.svg";
+import { ReactComponent as DesignInterfaceTop } from "./assets/img/design-interface-top.svg";
+import { ReactComponent as DesignInterfaceBottom } from "./assets/img/design-interface-bottom.svg";
 import { ReactComponent as DesignPlanning } from "./assets/img/design-planning.svg";
-import Portfolio1 from "./assets/img/p-mindfullness.jpg";
-import Portfolio2 from "./assets/img/p-gn.jpg";
+import Bball2 from "./assets/img/p-mindfullness-1.jpg";
+import Bball1 from "./assets/img/p-mindfullness.jpg";
 import Portfolio3 from "./assets/img/p-mya.jpg";
 import Portfolio4 from "./assets/img/p-bod-2.png";
 import BankBg from "./assets/img/p-bod-bg.jpg";
+import Bank0 from "./assets/img/p-bod-0.jpg";
 import Bank1 from "./assets/img/p-bod-1.png";
 import Bank2 from "./assets/img/p-bod-2.png";
 import Bank3 from "./assets/img/p-bod-3.png";
+import Signal0 from "./assets/img/p-signal.jpg";
+import Signal1 from "./assets/img/p-signal-1.jpg";
+import Signal2 from "./assets/img/p-signal-2.jpg";
+import Signal3 from "./assets/img/p-signal-3.jpg";
+import Gn0 from "./assets/img/p-gn.jpg";
+import Gn1 from "./assets/img/p-gn-1.jpg";
+import Gn2 from "./assets/img/p-gn-2.jpg";
+import Gn3 from "./assets/img/p-gn-3.jpg";
+import sketchBigCircle from "./assets/img/sketch-bigcircle.png";
+import sketchCircle from "./assets/img/sketch-circle.png";
+import sketchArrow from "./assets/img/sketch-down-arrow.png";
+import sketchShow from "./assets/img/sketch-showwork.png";
 import { Button } from "./cmpts/Button";
 import { Project } from "./cmpts/Project";
 import { ChatBubble } from "./cmpts/ChatBubble";
 
 import SketchLine from "./assets/img/sketch-line.png";
-import shapeStack from "./assets/img/shape-group.svg";
+import shapeStackBottom from "./assets/img/shapes-bottom.svg";
+import shapeStack2 from "./assets/img/shape-group2.svg";
+import shapeStack3 from "./assets/img/shape-group3.svg";
 import ah1 from "./assets/img/heads/open-ah-1.png";
 import ah2 from "./assets/img/heads/open-ah-2.png";
 import oh1 from "./assets/img/heads/open-oh-1.png";
@@ -28,10 +44,10 @@ import closed from "./assets/img/heads/closed-2.png";
 import distracted from "./assets/img/heads/distracted.png";
 
 const adamHeads1 = [ah1, ah2, oh1, r];
-const adamHeads2 = [oh1 , ah2];
-const adamHeads3 = [closed, distracted, r, ah1];
+const adamHeads2 = [oh1 , ah2, ah1];
+const adamHeads3 = [oh2, ah2, r, ah1];
 
-type ProjectNames = "headGame" | "homeBank";
+type ProjectNames = "headGame" | "homeBank" | "miscApps" | "goNoodle";
 
 export default function App() {
   const [projectName, setProjectName] = useState<ProjectNames | null>(null);
@@ -44,12 +60,12 @@ export default function App() {
   }
 
   return (
-    <div className="flex">
+    <div className="flex bg-repeat dot-bg">
       {/* Left Nav */}
       <div className="hidden sm:block sm:w-20 md:w-24 bg-coral"></div>
       <div className={`z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 transition-colors transform duration-500 ease-in-out ${showCloseAction ? "border-gray bg-gray-light" : "border-aqua bg-aqua-light"}`}>
       {/* <div className="z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 border-aqua bg-aqua-light"> */}
-        <div className="">
+        <div id="logo">
           <div className="px-sm">
             <svg 
               style={{
@@ -74,85 +90,86 @@ export default function App() {
           <img src={SketchLine} />
           <h1 className="font-tiny text-center py-xs">UX DESIGN</h1>
         </div>
-        <h1 className="font-tiny text-center py-xs">CONTACT</h1>
+        
+        <a className="tiny-button font-tiny text-center py-xs" href="mailto:howard.adamp@gmail.com?subject=Hi! Let's Talk!">Contact</a>
       </div>
       {/* Page Container */}
-      <div className={`container mx-auto transition delay-500 ${showCloseAction ? "opacity-0" : "opacity-100"}`}>
-        <div className="flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
+      <div className={`container relative mx-auto transition delay-500 ${showCloseAction ? "opacity-0" : "opacity-100"}`}>
+        <div className="relative flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:px-2xl lg:py-xl mt-md md:mt-0 text-center">
+          <img className="absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} />
           <ChatBubble direction="right">
-            Hello! My name is Adam. I’ve designed things on the internet for 16
-            years. I should be tired of it by now, but I’m not! I still love the
-            process and the result. Start scrolling to see what I can do.
+          Hello! I'm Adam. If you're looking for an experienced designer to help reach your business objectives, we should talk. I operate in the paradigm of <em>'designer as facilitator'</em> and not <em>'designer as god'</em>. I help drive the end-to-end design process while working with cross-functional teams to make the best decisions for the user.  
           </ChatBubble>
+          <img className="absolute left-1/3 -bottom-1/4 w-6 md:w-16" src={sketchArrow} />
         </div>
-        <div className="flex flex-col items-center space-y-sm p-md sm:py-lg sm:p-lg md:p-2xl text-center">
-          <DesignPlanning className="w-full mb-xs md:mb-sm" />
-          <h2 className="font-big-buddy">Design Planning</h2>
-          <p className="font-base lg:px-xl">
-            I believe this is a critical step in the design process. It’s quick,
-            inexpensive, and disposable. It can provide the appropriate level of
-            refinement for the current stage and provide a catalyst for
-            conversations between stakeholders
+        <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
+          <DesignPlanning className="w-full mb-xs md:mb-sm px-sm" />
+          <h2 className="font-big-buddy mb-sm">Design Thinking</h2>
+          <p className="font-speech lg:px-md">
+            I bring creativity and idea generation to projects through sketching. These quick, inexpensive, and disposable artifacts help serve as a catalyst for meaningful conversations between teams and stakeholders. 
           </p>
+          {/* <h2 className="font-medium-buddy">Creativity and idea generation</h2>
+          <h2 className="font-medium-buddy">Journey mapping and user testing</h2>
+          <h2 className="font-medium-buddy">Thriving when helping to identify problems to solve</h2>
+          <h2 className="font-medium-buddy">Ego-free attitude that welcomes candid feedback</h2> */}
         </div>
 
-        <div className="flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
-          <DesignInterface className="w-full mb-xs md:mb-sm" />
-          <h2 className="font-big-buddy">Interface Design</h2>
-          <p className="font-base lg:px-xl">
-            I bring creativity into enumerating meaningfully distinct options
-            from which to choose. From prototypes to high-fidelity designs.
+        <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
+          <DesignInterfaceTop className="w-full mb-sm md:mb-md px-sm" />
+          <h2 className="font-big-buddy mb-sm">Interface Design</h2>
+          <p className="font-speech lg:px-md">
+            I design experiences using human-centered design principles, creating distinct options that help facilitate meaningful discussion. I strive for an ego-free attitude where no work is precious and iteration is key to innovation.
           </p>
+          <DesignInterfaceBottom className="w-full mt-sm md:mt-md" />
         </div>
 
-        <div className="flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
+        <div className="relative flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
           <DesignSystem className="w-full mb-xs md:mb-sm" />
-          <h2 className="font-big-buddy">Design Systems</h2>
-          <p className="font-base lg:px-xl">
-            Distilling designs down to elements and tokens that can be organized
-            into reusable components that scale. Experience working in
-            development teams, helping maintain visual integrity between mockups
-            and production-ready code. Figma, Storybook, Github
+          <h2 className="font-big-buddy mb-sm">Design Systems</h2>
+          <p className="font-speech lg:px-md">
+          I understand that design work isn't done once something has shipped. I enjoy working with engineering and design teams to make sure design systems are well organized, documented, and implemented - using tools like Figma, Storybook, and Github.
           </p>
+          <img className="absolute right-0 -bottom-16 w-32 md:w-60" src={sketchShow} />
         </div>
-
-        <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
+        {/* <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
           <ChatBubble className="mb-lg" frames={adamHeads2}>Take a look at some of my work!</ChatBubble>
-        </div>
-        <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-sm p-sm text-center">
+        </div> */}
+        {/* <iframe style={{"border": "1px solid rgba(0, 0, 0, 0.1);"}} width="100%" height="750" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCdTDvUhRE0QYEQ0oWBSa5K%2FBank-of-Dad%3Fnode-id%3D268%253A624"></iframe> */}
+        <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-sm p-sm text-center pt-lg">
+          <img
+            style={{ cursor: "pointer" }}
+            src={Bball1}
+            className="transition duration-700 ease-in-out transform hover:scale-95"
+            onClick={() => setProjectName("headGame")}
+          />
+          <img
+            style={{ cursor: "pointer" }}
+            src={Gn0}
+            className="transition duration-700 ease-in-out transform hover:scale-95"
+            onClick={() => setProjectName("goNoodle")}
+          />
+          <img
+            style={{ cursor: "pointer" }}
+            src={Signal3}
+            className="transition duration-700 ease-in-out transform hover:scale-95"
+            onClick={() => setProjectName("miscApps")}
+          />
           <img
             style={{ cursor: "pointer" }}
             src={Portfolio4}
             className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("homeBank")}
           />
-          <img
-            style={{ cursor: "pointer" }}
-            src={Portfolio1}
-            className="transition duration-700 ease-in-out transform hover:scale-95"
-            onClick={() => setProjectName("headGame")}
-          />
-          <img
-            style={{ cursor: "pointer" }}
-            src={Portfolio2}
-            className="transition duration-700 ease-in-out transform hover:scale-95"
-            onClick={() => setProjectName("headGame")}
-          />
-          <img
-            style={{ cursor: "pointer" }}
-            src={Portfolio3}
-            className="transition duration-700 ease-in-out transform hover:scale-95"
-            onClick={() => setProjectName("headGame")}
-          />
           
         </div>
-        <div className="p-md py-lg sm:p-lg md:p-lg lg:p-2xl">
+        {/* <div className="relative p-md py-lg sm:p-lg md:p-lg lg:p-2xl">
           <ChatBubble className="mb-3xl">
             Right now, I’m looking to help a team make great products for kids
             and families. I am helping raise two kids and I care deeply about
             the challenges and opportunities to use technology to improve their
             lives. So if..
           </ChatBubble>
+          <img className="absolute -left-32 top-0 w-2/12" src={shapeStack2} />
           <ChatBubble className="mb-3xl sm:w-3/4" direction="right">
             Dad, Can I have a 50 hundred dollars?
           </ChatBubble>
@@ -160,20 +177,23 @@ export default function App() {
             I'm in the middle of talking with this nice person. Be patient and
             we'll talk about it soon.
           </ChatBubble>
-
-          <div className="flex flex-col sm:py-lg text-center">
-            <ChatBubble className="mb-3xl">
-              So if you're interested in working together, get in touch! You can
-              find me on LinkedIn or just send me an email.
-            </ChatBubble>
-            <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm">
-              <Button text="Email Me" />
-              <Button text="Connect on LinkedIn" />
-            </div>
-            <p className="font-base px-md"></p>
+        </div> */}
+        <div className="relative p-md py-lg sm:p-lg md:p-lg lg:p-2xl">
+          {/* <img className="absolute -right-52 top-0 w-2/12" src={shapeStack3} /> */}
+          <ChatBubble frames={adamHeads3} className="mb-3xl">
+            I'm looking for a team who values design and is aligned around caring deeply about their users. My parents are both professional caregivers and I bring that sense of empathy to my work as well.
+            Thanks for taking a look at my work! I'm available for full-time or contract work. It's your move!
+          </ChatBubble>
+          <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-xl">
+            <img className="absolute object-center w-full md:w-1/2 transform transition hover:scale-105" src={sketchBigCircle} />
+            <Button className="mt-2xl z-10" text="Get in Touch" />
           </div>
+          <p className="font-base px-md"></p>
         </div>
-        <img className="mx-auto" src={shapeStack} />
+        <div className="relative">
+          <img className="ml-auto" src={shapeStackBottom} />
+        </div>
+        
       </div>
       
       <Project
@@ -198,19 +218,35 @@ interface TProject {
 type Projects = { [key in ProjectNames]: TProject };
 var projects: Projects = {
   headGame: {
-    title: "Head in the Game",
+    title: "Sports + Mindfullness for Young Athletes",
     description:
-      "After learning about the life and journey of basketball legend Bill Walton, I put together some concepts for a service that takes the meditation training of Headspace and embeds it in the world of basketball. When I played basketball as a kid and a high school student, I wish there were programs like this to help me deal with the anxiety and pressure - both internal and external. And with the movement led by Simone Biles and Naomi Osaka, it's now becoming part of our collective conciousness. It's proven that sports can help kids learn life skills beyond the game - like teamwork and sportsmanship, but the potential for mindfullness seems to be untapped. The design of this product leans heavily on non-tradtional aesthetics. The color pallette and graphics are a nod to the ... ",
-    images: [Portfolio1, Portfolio1, Portfolio1],
+      "These are some mixed-fidelity prototypes for a service that takes the meditation training of Headspace and embeds it in the world of basketball. I wish there were programs like this when I played sports as a young person. The anxiety and pressure can take the fun out of sports, but its also proven that sports can help kids learn life skills beyond the teamwork and 'sportsmanship' values.",
+    images: [Bball1, Bball2],
     background: BankBg,
-    caption: "Prototype, Hi-Fidelity Mockups",
+    caption: "Ideation, Mixed-Fidelity Prototypes",
   },
   homeBank: {
-    title: "Home Bank",
+    title: "Fintech for kids and families",
     description:
-      "Financial app for kids based on a great book called 'First National Bank of Dad'. Alot of these services have popped up over the past 5 years, so I combined the idea of teaching kids about compound interest and blah blah",
-    images: [Bank1, Bank2, Bank3],
-    background: BankBg,
-    caption: "Prototype, Hi-Fidelity Mockups",
+      "After reading 'First National Bank of Dad' 5 years ago, I wanted to explore a product that helps parents teach their children how to not just earn and spend money (the fun part), but to grow their money over time. Alot of these services have popped up over these past 5 years.",
+    images: [Bank2, Bank3, Bank0],
+    background: "",
+    caption: "Prototype, Hi-Fidelity Prototypes",
+  },
+  miscApps: {
+    title: "Almost 1,000 Screen Designs",
+    description:
+      "These slides represent the hundreds of projects that I worked on from 2005-2020. UX/UI Designer for data-heavy web applications: Scheduling application for Clinical Research Trials, Financial forecasting application for GE Power, Application managing long-term service agreements for Waukesha Gas Engines, Attachments application for a 'leading agriculture manufacturer'.",
+    images: [Signal0, Signal1, Signal2, Signal3],
+    background: "",
+    caption: "Ideation/Sketching, Lo-Fidelity Prototypes, Hi-Fidelity Prototypes, User-Testing, CSS Implementation",
+  },
+  goNoodle: {
+    title: "GoNoodle",
+    description:
+      "I worked with Product Design and Engineering to launch a new product and updated design system. I worked in and maintained the Figma library, and contributed to the React codebase using Tailwind and Storybook",
+    images: [Gn0, Gn1, Gn2, Gn3],
+    background: "",
+    caption: "Design System Contribution and Documentation, Interface Design, CSS Implementation",
   },
 };
