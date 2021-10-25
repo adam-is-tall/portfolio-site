@@ -65,17 +65,18 @@ export default function App() {
       <div className="hidden sm:block sm:w-20 md:w-24 bg-coral"></div>
       <div className={`z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 transition-colors transform duration-500 ease-in-out ${showCloseAction ? "border-gray bg-gray-light" : "border-aqua bg-aqua-light"}`}>
       {/* <div className="z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 border-aqua bg-aqua-light"> */}
-        <div id="logo">
-          <div className="px-sm">
+        <div id="logo" className="flex flex-row sm:flex-col">
+          <div className="">
             <svg 
               style={{
                 cursor: "pointer",
                 height: showCloseAction ? undefined : 0,
-                transitionProperty: "height",
+                width: showCloseAction ? undefined : 0,
+                transitionProperty: "all",
                 transitionDuration: "500ms",
                 transitionTimingFunction: "ease-out",
               }}
-              className="w-full sm:h-20 mr-sm sm:mb-sm sm:ml-0 self-center"
+              className="w-16 sm:w-full sm:h-20 mr-sm sm:ml-0 self-center"
               onClick={closeProject} width="55" height="48" viewBox="0 0 55 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M53 24L4 24" stroke="#333333" stroke-width="4" stroke-linecap="round"/>
               <path d="M23 46L2.42184 25.0364C2.28811 24.9004 2.18202 24.7388 2.10964 24.561C2.03726 24.3832 2 24.1925 2 24C2 23.8075 2.03726 23.6168 2.10964 23.439C2.18202 23.2612 2.28811 23.0996 2.42184 22.9636L23 2" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -87,20 +88,20 @@ export default function App() {
 
         <div className="w-full hidden sm:block">
           <h1 className="font-little-buddy text-center">Adam Howard</h1>
-          <img src={SketchLine} />
+          <img src={SketchLine} alt="sketched line" />
           <h1 className="font-tiny text-center py-xs">UX DESIGN</h1>
         </div>
         
-        <a className="tiny-button font-tiny text-center py-xs" href="mailto:howard.adamp@gmail.com?subject=Hi! Let's Talk!">Contact</a>
+        <a className="tiny-button font-tiny text-center py-xs" href="mailto:howard.adamp@gmail.com?subject=Hi, Adam!">Contact</a>
       </div>
       {/* Page Container */}
       <div className={`container relative mx-auto transition delay-500 ${showCloseAction ? "opacity-0" : "opacity-100"}`}>
         <div className="relative flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:px-2xl lg:py-xl mt-md md:mt-0 text-center">
-          <img className="absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} />
+          <img className="absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} alt="sketched circle"/>
           <ChatBubble direction="right">
           Hello! I'm Adam. If you're looking for an experienced designer to help reach your business objectives, we should talk. I operate in the paradigm of <em>'designer as facilitator'</em> and not <em>'designer as god'</em>. I help drive the end-to-end design process while working with cross-functional teams to make the best decisions for the user.  
           </ChatBubble>
-          <img className="absolute left-1/3 -bottom-1/4 w-6 md:w-16" src={sketchArrow} />
+          <img className="absolute left-1/3 -bottom-1/4 w-6 md:w-16" src={sketchArrow} alt="sketched arrow"/>
         </div>
         <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
           <DesignPlanning className="w-full mb-xs md:mb-sm px-sm" />
@@ -108,10 +109,6 @@ export default function App() {
           <p className="font-speech lg:px-md">
             I bring creativity and idea generation to projects through sketching. These quick, inexpensive, and disposable artifacts help serve as a catalyst for meaningful conversations between teams and stakeholders. 
           </p>
-          {/* <h2 className="font-medium-buddy">Creativity and idea generation</h2>
-          <h2 className="font-medium-buddy">Journey mapping and user testing</h2>
-          <h2 className="font-medium-buddy">Thriving when helping to identify problems to solve</h2>
-          <h2 className="font-medium-buddy">Ego-free attitude that welcomes candid feedback</h2> */}
         </div>
 
         <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
@@ -129,7 +126,7 @@ export default function App() {
           <p className="font-speech lg:px-md">
           I understand that design work isn't done once something has shipped. I enjoy working with engineering and design teams to make sure design systems are well documented, implemented, and maintained - using tools like Figma, Storybook, and Github.
           </p>
-          <img className="absolute right-0 -bottom-16 w-32 md:w-60" src={sketchShow} />
+          <img className="absolute right-0 -bottom-16 w-32 md:w-60" src={sketchShow} alt="sketched arrow"/>
         </div>
         {/* <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
           <ChatBubble className="mb-lg" frames={adamHeads2}>Take a look at some of my work!</ChatBubble>
@@ -141,24 +138,28 @@ export default function App() {
             src={Bball1}
             className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("headGame")}
+            alt="Sports + Mindfullness for Young Athletes"
           />
           <img
             style={{ cursor: "pointer" }}
             src={Gn0}
             className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("goNoodle")}
+            alt="Design System for GoNoodle"
           />
           <img
             style={{ cursor: "pointer" }}
             src={Signal3}
             className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("miscApps")}
+            alt="Misc App Designs"
           />
           <img
             style={{ cursor: "pointer" }}
             src={Portfolio4}
             className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("homeBank")}
+            alt="Fintech for kids and families"
           />
           
         </div>
@@ -185,13 +186,13 @@ export default function App() {
             Thanks for taking a look at my work! I'm available for full-time or contract work. It's your move!
           </ChatBubble>
           <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-xl">
-            <img className="absolute object-center w-full md:w-1/2 transform transition hover:scale-105" src={sketchBigCircle} />
-            <Button className="mt-2xl z-10" text="Get in Touch" />
+            <img className="absolute object-center w-full md:w-1/2 transform transition hover:scale-105" src={sketchBigCircle} alt="Sketched Circle"/>
+            <Button email="howard.adamp@gmail.com?subject=Hi, Adam!" className="mt-2xl z-10" text="Get in Touch" />
           </div>
           <p className="font-base px-md"></p>
         </div>
         <div className="relative">
-          <img className="ml-auto" src={shapeStackBottom} />
+          <img className="ml-auto" src={shapeStackBottom} alt="stack of shapes along the bottom of page"/>
         </div>
         
       </div>
@@ -220,7 +221,7 @@ var projects: Projects = {
   headGame: {
     title: "Sports + Mindfullness for Young Athletes",
     description:
-      "These are some mixed-fidelity prototypes for a service that takes the meditation training of Headspace and embeds it in the world of basketball. I wish there were programs like this when I played sports as a young person. The anxiety and pressure can take the fun out of sports, but its also proven that sports can help kids learn life skills beyond the teamwork and 'sportsmanship' values.",
+      "These are some mixed-fidelity prototypes for a service that takes the meditation training of Headspace and embeds it in the world of basketball. I wish there were programs like this when I played sports as a young person. The anxiety and pressure can take the fun out of sports, but its also proven that sports can help kids learn life skills beyond the typical teamwork and sportsmanship values.",
     images: [Bball1, Bball2],
     background: BankBg,
     caption: "Ideation, Mixed-Fidelity Prototypes",
@@ -228,15 +229,15 @@ var projects: Projects = {
   homeBank: {
     title: "Fintech for kids and families",
     description:
-      "After reading 'First National Bank of Dad' 5 years ago, I wanted to explore a product that helps parents teach their children how to not just earn and spend money (the fun part), but to grow their money over time. Alot of these services have popped up over these past 5 years.",
+      "After reading 'First National Bank of Dad' 5 years ago, I wanted to explore a product that helps parents teach their children how to not just earn and spend money (the fun part), but to grow their money over time. Alot of these services have popped up over these past 5 years. This was a fun exercize to think about how I'd like to make this product stand out visually and s a service.",
     images: [Bank2, Bank3, Bank0],
     background: "",
-    caption: "Prototype, Hi-Fidelity Prototypes",
+    caption: "Ideation, Hi-Fidelity Prototypes",
   },
   miscApps: {
     title: "Almost 1,000 Screen Designs",
     description:
-      "These slides represent the hundreds of projects that I worked on from 2005-2020. UX/UI Designer for data-heavy web applications: Scheduling application for Clinical Research Trials, Financial forecasting application for GE Power, Application managing long-term service agreements for Waukesha Gas Engines, Attachments application for a 'leading agriculture manufacturer'.",
+      "These slides represent the hundreds of projects that I worked on from 2005-2020 as a UX/UI Designer at Signal in Raleigh, NC. Some examples of these data-heavy web applications are a Scheduling application for Clinical Research Trials, Financial forecasting application for GE Power, Long-term service agreements application for Waukesha Gas Engines, and an Product Attachments application for a 'leading agriculture manufacturer'.",
     images: [Signal0, Signal1, Signal2, Signal3],
     background: "",
     caption: "Ideation/Sketching, Lo-Fidelity Prototypes, Hi-Fidelity Prototypes, User-Testing, CSS Implementation",

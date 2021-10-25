@@ -64,7 +64,7 @@ export function TalkingHead(props: Props) {
       <img
         style={{ transform: `scaleX(${xScale})` }}
         src={frames[frameIndex]}
-        alt="Adams face"
+        alt="Adam's Silly Face"
         className="w-full"
       />
     </div>
