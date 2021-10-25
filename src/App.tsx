@@ -115,7 +115,7 @@ export default function App() {
           <DesignInterfaceTop className="w-full mb-sm md:mb-md px-sm" />
           <h2 className="font-big-buddy mb-sm">Interface Design</h2>
           <p className="font-speech lg:px-md">
-            I design experiences using human-centered design principles, creating distinct options that help facilitate meaningful discussion. I strive for an ego-free attitude where no work is precious and iteration is key to innovation.
+            I design experiences using human-centered design principles, creating distinct options that help facilitate meaningful discussion. I strive for an ego-free attitude where no work is precious and iteration is key to good work.
           </p>
           <DesignInterfaceBottom className="w-full mt-sm md:mt-md" />
         </div>
@@ -134,28 +134,28 @@ export default function App() {
         {/* <iframe style={{"border": "1px solid rgba(0, 0, 0, 0.1);"}} width="100%" height="750" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCdTDvUhRE0QYEQ0oWBSa5K%2FBank-of-Dad%3Fnode-id%3D268%253A624"></iframe> */}
         <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-sm p-sm text-center pt-lg">
           <img
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", filter: "saturate(0)" }}
             src={Bball1}
             className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("headGame")}
             alt="Sports + Mindfullness for Young Athletes"
           />
           <img
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", filter: "saturate(0)" }}
             src={Gn0}
             className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("goNoodle")}
             alt="Design System for GoNoodle"
           />
           <img
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", filter: "saturate(0)" }}
             src={Signal3}
             className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("miscApps")}
             alt="Misc App Designs"
           />
           <img
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", filter: "saturate(0)" }}
             src={Portfolio4}
             className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("homeBank")}
