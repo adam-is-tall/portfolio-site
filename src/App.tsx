@@ -60,7 +60,7 @@ export default function App() {
   }
 
   return (
-    <div className="flex bg-repeat dot-bg">
+    <div className="flex bg-repeat dot-bg overflow-hidden">
       {/* Left Nav */}
       <div className="hidden sm:block sm:w-20 md:w-24 bg-coral"></div>
       <div className={`z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 transition-colors transform duration-500 ease-in-out ${showCloseAction ? "border-gray bg-gray-light" : "border-aqua bg-aqua-light"}`}>
@@ -182,7 +182,7 @@ export default function App() {
         <div className="relative p-md py-lg sm:p-lg md:p-lg lg:p-2xl">
           {/* <img className="absolute -right-52 top-0 w-2/12" src={shapeStack3} /> */}
           <ChatBubble frames={adamHeads3} className="mb-3xl">
-            After 10+ years working in agencies, I'm currently doing contract work with product teams. I'm looking to join a team that values design and is passionate about providing value to its users. I'm the son of a teacher and a nurse. I believe caring about the people who use the products we build should be par for the course. If you agree with me and need help, please get in touch and let's talk about it!
+            After 10+ years of working in agencies, I'm now working with product teams. I'd like to join a team that values design and truely cares about the people who use their products. If that sounds like you, please get in touch and let's talk about it!
           </ChatBubble>
           <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-xl">
             <img className="absolute object-center w-full md:w-1/2 transform transition hover:scale-105" src={sketchBigCircle} alt="Sketched Circle"/>
