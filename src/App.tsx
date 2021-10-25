@@ -182,8 +182,7 @@ export default function App() {
         <div className="relative p-md py-lg sm:p-lg md:p-lg lg:p-2xl">
           {/* <img className="absolute -right-52 top-0 w-2/12" src={shapeStack3} /> */}
           <ChatBubble frames={adamHeads3} className="mb-3xl">
-            I'm looking for a team who values design and is aligned around caring deeply about their users. My parents are both professional caregivers and I bring that sense of empathy to my work as well.
-            Thanks for taking a look at my work! I'm available for full-time or contract work. It's your move!
+            After 10+ years working in agencies, I'm currently doing contract work with product teams. I'm looking to join a team that values design and is passionate about providing value to its users. I'm the son of a teacher and a nurse. I believe caring about the people who use the products we build should be par for the course. If you agree with me and need help, please get in touch and let's talk about it!
           </ChatBubble>
           <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-xl">
             <img className="absolute object-center w-full md:w-1/2 transform transition hover:scale-105" src={sketchBigCircle} alt="Sketched Circle"/>
