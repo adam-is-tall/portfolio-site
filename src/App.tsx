@@ -82,8 +82,8 @@ export default function App() {
               <path d="M23 46L2.42184 25.0364C2.28811 24.9004 2.18202 24.7388 2.10964 24.561C2.03726 24.3832 2 24.1925 2 24C2 23.8075 2.03726 23.6168 2.10964 23.439C2.18202 23.2612 2.28811 23.0996 2.42184 22.9636L23 2" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>  
           </div>
-          <LogoVert className={`w-full hidden sm:block ${projectIsOpen ? "invisible" : "visible"}`}/>
-          <LogoSide className={`w-10 sm:w-20 block sm:hidden ${projectIsOpen ? "invisible" : "visible"}`}/>
+          <LogoVert className={`w-full ${projectIsOpen ? "hidden" : "hidden sm:block"}`}/>
+          <LogoSide className={`w-10 sm:w-20 ${projectIsOpen ? "hidden" : "block sm:hidden"}`}/>
         </div>
 
         <div className="w-full hidden sm:block">
@@ -234,7 +234,7 @@ var projects: Projects = {
     caption: "Ideation, Hi-Fidelity Prototypes",
   },
   miscApps: {
-    title: "30,000 Hours of Design Experience 🕰",
+    title: "30,000 Hours of Design Experience",
     description:
       "These slides represent the hundreds of projects that I worked on as a UX/UI Designer at Signal in Raleigh, NC. These projects range from a scheduling app for Clinical Research Trials to a Financial forecasting application for GE Power.",
     images: [Signal0, Signal1, Signal2, Signal3],
