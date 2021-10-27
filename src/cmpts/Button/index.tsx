@@ -11,7 +11,7 @@ export function Button(props: Props) {
 
   return (
     <div>
-      <a href={"mailto:" + props.email} type="button" className="block z-10 items-center px-md py-sm font-btn rounded transform transition hover:scale-105 text-white hover:text-black bg-royal hover:bg-coral focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-royal-light">
+      <a href={"mailto:" + props.email} className="block z-10 items-center px-md py-sm font-btn rounded transform transition hover:scale-105 text-white hover:text-black bg-royal hover:bg-coral focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-royal-light">
         {text}
       </a>
     </div>
