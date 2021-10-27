@@ -76,7 +76,7 @@ export default function App() {
                 transitionDuration: "500ms",
                 transitionTimingFunction: "ease-out",
               }}
-              className="w-16 sm:w-full sm:h-20 mr-sm sm:ml-0 self-center"
+              className="w-16 sm:w-full sm:h-20 mr-sm sm:ml-0 px-sm self-center"
               onClick={closeProject} width="55" height="48" viewBox="0 0 55 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M53 24L4 24" stroke="#333333" stroke-width="4" stroke-linecap="round"/>
               <path d="M23 46L2.42184 25.0364C2.28811 24.9004 2.18202 24.7388 2.10964 24.561C2.03726 24.3832 2 24.1925 2 24C2 23.8075 2.03726 23.6168 2.10964 23.439C2.18202 23.2612 2.28811 23.0996 2.42184 22.9636L23 2" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -182,7 +182,7 @@ export default function App() {
         <div className="relative p-md py-lg sm:p-lg md:p-lg lg:p-2xl">
           {/* <img className="absolute -right-52 top-0 w-2/12" src={shapeStack3} /> */}
           <ChatBubble frames={adamHeads3} className="mb-3xl">
-            After 10+ years of working in agencies, I'm now working with product teams. I'd like to join a team that values design and truely cares about the people who use their products. If that sounds like you, please get in touch and let's talk about it!
+            After 10+ years of working in agencies, I'm now working with product teams. I'd like to join a team that values design and truly cares about the people who use their products. If that sounds like you, please get in touch and let's talk about it!
           </ChatBubble>
           <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-xl">
             <img className="absolute object-center w-full md:w-1/2 transform transition hover:scale-105" src={sketchBigCircle} alt="Sketched Circle"/>
@@ -218,7 +218,7 @@ interface TProject {
 type Projects = { [key in ProjectNames]: TProject };
 var projects: Projects = {
   headGame: {
-    title: "Sports + Mindfullness for Young Athletes",
+    title: "Sports + Mindfulness for Young Athletes",
     description:
       "These are some mixed-fidelity prototypes for a service that takes the meditation training of Headspace and embeds it in the world of basketball. I wish there were programs like this when I played sports as a young person. The anxiety and pressure can take the fun out of sports, but its also proven that sports can help kids learn life skills beyond the typical teamwork and sportsmanship values.",
     images: [Bball1, Bball2],
@@ -228,15 +228,15 @@ var projects: Projects = {
   homeBank: {
     title: "Fintech for kids and families",
     description:
-      "After reading 'First National Bank of Dad' 5 years ago, I wanted to explore a product that helps parents teach their children how to not just earn and spend money (the fun part), but to grow their money over time. Alot of these services have popped up over these past 5 years. This was a fun exercize to think about how I'd like to make this product stand out visually and s a service.",
+      "After reading 'First National Bank of Dad' 5 years ago, I wanted to explore a product that helps parents teach their children not just to earn and spend money (the fun part), but to grow their money over time. More of these services have popped up over the past 5 years. This was a fun exercise to think through how I'd like to make this product stand out visually and as a service.",
     images: [Bank2, Bank3, Bank0],
     background: "",
     caption: "Ideation, Hi-Fidelity Prototypes",
   },
   miscApps: {
-    title: "Almost 1,000 Screen Designs",
+    title: "30,000 Hours of Design Experience 🕰",
     description:
-      "These slides represent the hundreds of projects that I worked on from 2005-2020 as a UX/UI Designer at Signal in Raleigh, NC. Some examples of these data-heavy web applications are a Scheduling application for Clinical Research Trials, Financial forecasting application for GE Power, Long-term service agreements application for Waukesha Gas Engines, and an Product Attachments application for a 'leading agriculture manufacturer'.",
+      "These slides represent the hundreds of projects that I worked on as a UX/UI Designer at Signal in Raleigh, NC. These projects range from a scheduling app for Clinical Research Trials to a Financial forecasting application for GE Power.",
     images: [Signal0, Signal1, Signal2, Signal3],
     background: "",
     caption: "Ideation/Sketching, Lo-Fidelity Prototypes, Hi-Fidelity Prototypes, User-Testing, CSS Implementation",
