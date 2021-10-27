@@ -245,7 +245,7 @@ var projects: Projects = {
     title: "GoNoodle",
     description:
       "I worked with Product Design and Engineering to launch a new product and updated design system. I worked in and maintained the Figma library, and contributed to the React codebase using Tailwind and Storybook",
-    images: [Gn0, Gn1, Gn2, Gn3],
+    images: [Gn1, Gn2, Gn3, Gn0],
     background: "",
     caption: "Design System Contribution and Documentation, Interface Design, CSS Implementation",
   },
