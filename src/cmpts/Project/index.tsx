@@ -29,9 +29,9 @@ export function Project(props: Props) {
         <p className="font-skills text-royal mb-sm">{caption}</p>
         <p className="font-base mb-sm">{description}</p>
       </div>
-      <div className="text-center pb-sm">
+      <div className="text-center">
         {images.map((url) => (
-          <div className="bg-gray.light bg-opacity-20 p-sm mb-sm"><img className="" src={url} alt="project image"/></div>
+          <div className="bg-gray.light bg-opacity-20 mt-sm border-gray border-b-2"><img className="" src={url} alt="project image"/></div>
         ))}
       </div>
       {/* <div
