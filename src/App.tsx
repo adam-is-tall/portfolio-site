@@ -20,9 +20,9 @@ import Signal1 from "./assets/img/p-signal-1.jpg";
 import Signal2 from "./assets/img/p-signal-2.jpg";
 import Signal3 from "./assets/img/p-signal-3.jpg";
 import Gn0 from "./assets/img/p-gn.jpg";
-import Gn1 from "./assets/img/p-gn-1.jpg";
-import Gn2 from "./assets/img/p-gn-2.jpg";
-import Gn3 from "./assets/img/p-gn-3.jpg";
+import Gn1 from "./assets/img/p-gn-system.jpg";
+import Gn2 from "./assets/img/p-gn-screens.jpg";
+import Gn3 from "./assets/img/p-gn-components.jpg";
 import sketchBigCircle from "./assets/img/sketch-bigcircle.png";
 import sketchCircle from "./assets/img/sketch-circle.png";
 import sketchArrow from "./assets/img/sketch-down-arrow.png";
@@ -99,7 +99,7 @@ export default function App() {
         <div className="relative flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:px-2xl lg:py-xl mt-md md:mt-0 text-center">
           <img className="absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} alt="sketched circle"/>
           <ChatBubble direction="right">
-          Hello! I'm Adam. If you're looking for an experienced designer to help reach your business objectives, we should talk. I operate in the paradigm of <em>'designer as facilitator'</em> and not <em>'designer as god'</em>. I help drive the end-to-end design process while working with cross-functional teams to make the best decisions for the user.  
+          Hello! I'm Adam. If you're looking for an experienced designer to help reach your business objectives, we should talk. I operate in the paradigm of <em>'designer as facilitator'</em>. I help drive the end-to-end design process while working with cross-functional teams to make the best decisions for the user.  
           </ChatBubble>
           <img className="absolute left-1/3 -bottom-1/4 w-6 md:w-16" src={sketchArrow} alt="sketched arrow"/>
         </div>
