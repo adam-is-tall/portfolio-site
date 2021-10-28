@@ -220,15 +220,15 @@ var projects: Projects = {
   headGame: {
     title: "Sports + Mindfulness for Young Athletes",
     description:
-      "These are some mixed-fidelity prototypes for a service that takes the meditation training of Headspace and embeds it in the world of basketball. I wish there were programs like this when I played sports as a young person. The anxiety and pressure can take the fun out of sports, but its also proven that sports can help kids learn life skills beyond the typical teamwork and sportsmanship values.",
+      "These are some mixed-fidelity prototypes for a service that combines mindfulness training with basketball. These were inspired by interviews with Hall of Famer Bill Walton. His journey and approach to mindfulness inspired the Empathy stage of Design Thinking. I spent a few cycles generating ideas and protoyping.",
     images: [Bball1, Bball2],
     background: BankBg,
-    caption: "Ideation, Mixed-Fidelity Prototypes",
+    caption: "Ideation, Mixed-Fidelity Prototypes, In Progress",
   },
   homeBank: {
     title: "Fintech for kids and families",
     description:
-      "After reading 'First National Bank of Dad' 5 years ago, I wanted to explore a product that helps parents teach their children not just to earn and spend money (the fun part), but to grow their money over time. More of these services have popped up over the past 5 years. This was a fun exercise to think through how I'd like to make this product stand out visually and as a service.",
+      "After reading 'First National Bank of Dad' 5 years ago, I wanted to explore a product that helps parents teach their children not just to earn and spend money (the fun part), but to grow their money over time. I spent a few cycles generating ideas and protoyping.",
     images: [Bank2, Bank3, Bank0],
     background: "",
     caption: "Ideation, Hi-Fidelity Prototypes",
@@ -239,7 +239,7 @@ var projects: Projects = {
       "These slides represent the hundreds of projects that I worked on as a UX/UI Designer at Signal in Raleigh, NC. These projects range from a scheduling app for Clinical Research Trials to a Financial forecasting application for GE Power.",
     images: [Signal0, Signal1, Signal2, Signal3],
     background: "",
-    caption: "Ideation/Sketching, Lo-Fidelity Prototypes, Hi-Fidelity Prototypes, User-Testing, CSS Implementation",
+    caption: "Ideation/Sketching, Lo-Fidelity Prototypes, Hi-Fidelity Prototypes, User-Testing, CSS",
   },
   goNoodle: {
     title: "GoNoodle",
