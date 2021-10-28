@@ -99,7 +99,7 @@ export default function App() {
         <div className="relative flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:px-2xl lg:py-xl mt-md md:mt-0 text-center">
           <img className="absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} alt="sketched circle"/>
           <ChatBubble direction="right">
-          Hello! I'm Adam. If you're looking for an experienced designer to help reach your business objectives, we should talk. I operate in the paradigm of <em>'designer as facilitator'</em>. I help drive the end-to-end design process while working with cross-functional teams to make the best decisions for the user.  
+          Hello! I'm Adam. If you're looking for an experienced designer to help reach your business objectives, we should talk. I operate in the paradigm of <em>'designer as facilitator'</em>. I drive the end-to-end design process with cross-functional teams to create products for the people.  
           </ChatBubble>
           <img className="absolute left-1/3 -bottom-1/4 w-6 md:w-16" src={sketchArrow} alt="sketched arrow"/>
         </div>
@@ -107,7 +107,7 @@ export default function App() {
           <DesignPlanning className="w-full mb-xs md:mb-sm px-sm" />
           <h2 className="font-big-buddy mb-sm">Design Thinking</h2>
           <p className="font-speech lg:px-md">
-            I bring creativity and idea generation to projects through sketching. These quick, inexpensive, and disposable artifacts help serve as a catalyst for meaningful conversations between teams and stakeholders. 
+            I bring creativity and idea generation to design projects. Quick, inexpensive, and disposable artifacts like sketches help serve as a catalyst for meaningful conversations between teams and stakeholders. 
           </p>
         </div>
 
