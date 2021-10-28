@@ -242,7 +242,7 @@ var projects: Projects = {
     caption: "Ideation/Sketching, Lo-Fidelity Prototypes, Hi-Fidelity Prototypes, User-Testing, CSS",
   },
   goNoodle: {
-    title: "GoNoodle",
+    title: "Design System for GoNoodle",
     description:
       "I worked with Product Design and Engineering to launch a new product and updated design system. I worked in and maintained the Figma library, and contributed to the React codebase using Tailwind and Storybook",
     images: [Gn1, Gn2, Gn3, Gn0],
