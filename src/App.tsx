@@ -236,7 +236,7 @@ var projects: Projects = {
   miscApps: {
     title: "30,000 Hours of Design Experience",
     description:
-      "These slides represent the hundreds of projects that I worked on as a UX/UI Designer at Signal in Raleigh, NC. These projects range from a scheduling app for Clinical Research Trials to a Financial forecasting application for GE Power.",
+      "These slides represent the hundreds of projects that I worked on as a UX/UI Designer at Signal in Raleigh, NC. Notable clients include GE Power, John Deere, Mack Trucks, Blue Cross Blue Shield of N.C., Ingersoll Rand and Syngenta.",
     images: [Signal0, Signal1, Signal2, Signal3],
     background: "",
     caption: "Ideation/Sketching, Lo-Fidelity Prototypes, Hi-Fidelity Prototypes, User-Testing, CSS",
