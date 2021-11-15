@@ -132,14 +132,14 @@ export default function App() {
           <ChatBubble className="mb-lg" frames={adamHeads2}>Take a look at some of my work!</ChatBubble>
         </div> */}
         {/* <iframe style={{"border": "1px solid rgba(0, 0, 0, 0.1);"}} width="100%" height="750" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCdTDvUhRE0QYEQ0oWBSa5K%2FBank-of-Dad%3Fnode-id%3D268%253A624"></iframe> */}
-        <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-sm p-sm text-center pt-lg">
-          <img
+        <div className="grid grid-flow-row grid-cols-1 grid-rows-2 gap-sm p-sm text-center pt-lg">
+          {/* <img
             style={{ cursor: "pointer", filter: "saturate(0)" }}
             src={Bball1}
             className="transition duration-700 ease-in-out transform hover:scale-95"
             onClick={() => setProjectName("headGame")}
             alt="Sports + Mindfullness for Young Athletes"
-          />
+          /> */}
           <img
             style={{ cursor: "pointer", filter: "saturate(0)" }}
             src={Gn0}
