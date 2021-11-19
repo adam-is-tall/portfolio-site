@@ -145,17 +145,17 @@ export default function App() {
           /> */}
           <img
             style={{ cursor: "pointer"}}
-            src={GnT}
-            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100"
-            onClick={() => setProjectName("goNoodle")}
-            alt="Design System for GoNoodle"
-          />
-          <img
-            style={{ cursor: "pointer"}}
             src={BankT}
             className="transition duration-700 ease-in-out transform scale-95 hover:scale-100"
             onClick={() => setProjectName("homeBank")}
             alt="Fintech for kids and families"
+          />
+          <img
+            style={{ cursor: "pointer"}}
+            src={GnT}
+            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100"
+            onClick={() => setProjectName("goNoodle")}
+            alt="Design System for GoNoodle"
           />
           <img
             style={{ cursor: "pointer", filter: "saturate(0)" }}
