@@ -19,6 +19,7 @@ import Signal0 from "./assets/img/p-signal.jpg";
 import Signal1 from "./assets/img/p-signal-1.jpg";
 import Signal2 from "./assets/img/p-signal-2.jpg";
 import Signal3 from "./assets/img/p-signal-3.jpg";
+import GnT from "./assets/img/p-gn-thumb.jpg";
 import Gn0 from "./assets/img/p-gn.jpg";
 import Gn1 from "./assets/img/p-gn-system.jpg";
 import Gn2 from "./assets/img/p-gn-screens.jpg";
@@ -141,23 +142,23 @@ export default function App() {
             alt="Sports + Mindfullness for Young Athletes"
           /> */}
           <img
-            style={{ cursor: "pointer", filter: "saturate(0)" }}
-            src={Gn0}
-            className="transition duration-700 ease-in-out transform hover:scale-95"
+            style={{ cursor: "pointer"}}
+            src={GnT}
+            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100"
             onClick={() => setProjectName("goNoodle")}
             alt="Design System for GoNoodle"
           />
           <img
             style={{ cursor: "pointer", filter: "saturate(0)" }}
             src={Signal3}
-            className="transition duration-700 ease-in-out transform hover:scale-95"
+            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100"
             onClick={() => setProjectName("miscApps")}
             alt="Misc App Designs"
           />
           <img
             style={{ cursor: "pointer", filter: "saturate(0)" }}
             src={Portfolio4}
-            className="transition duration-700 ease-in-out transform hover:scale-95"
+            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100"
             onClick={() => setProjectName("homeBank")}
             alt="Fintech for kids and families"
           />
@@ -203,6 +204,7 @@ export default function App() {
         background={project?.background}
         caption={project?.caption}
         onClose={closeProject}
+        url={project?.url}
       />
     </div>
   );
@@ -214,6 +216,7 @@ interface TProject {
   images: string[];
   caption: string;
   background: string;
+  url?: string;
 }
 type Projects = { [key in ProjectNames]: TProject };
 var projects: Projects = {
@@ -224,14 +227,16 @@ var projects: Projects = {
     images: [Bball1, Bball2],
     background: BankBg,
     caption: "Ideation, Mixed-Fidelity Prototypes, In Progress",
+    url: "http://www.google.com",
   },
   homeBank: {
-    title: "Fintech for kids and families",
+    title: "Financial Literacy for Kids and Families",
     description:
-      "After reading 'First National Bank of Dad' 5 years ago, I wanted to explore a product that helps parents teach their children not just to earn and spend money (the fun part), but to grow their money over time. I spent a few cycles generating ideas and protoyping.",
-    images: [Bank2, Bank3, Bank0],
+      "As a parent, I want my child to view money unemotionally, so they can use it as a practical tool for improving their lives. To that end, I wanted to explore a product that borrows from traditional chore/reward model while helping parents teach their children how to grow their money over time and give back. I've spent a few cycles generating ideas, protoyping, and testing.",
+    images: [Bank2],
     background: "",
-    caption: "Ideation, Hi-Fidelity Prototypes",
+    caption: "Ideation, Hi-Fidelity Prototypes, Work-In-Progress",
+    url: "https://glimmer-glitter-2bd.notion.site/Rags-to-Riches-cf77cbcdf22946a8bd5f36a7cacf27ba",
   },
   miscApps: {
     title: "30,000 Hours of Design Experience",
@@ -242,11 +247,12 @@ var projects: Projects = {
     caption: "Ideation/Sketching, Lo-Fidelity Prototypes, Hi-Fidelity Prototypes, User-Testing, CSS",
   },
   goNoodle: {
-    title: "Design System for GoNoodle",
+    title: "GoNoodle.com Redesign",
     description:
       "I worked with Product Design and Engineering to launch a new product and updated design system. I worked in and maintained the Figma library, and contributed to the React codebase using Tailwind and Storybook",
-    images: [Gn1, Gn2, Gn3, Gn0],
+    images: [Gn0, Gn2],
     background: "",
     caption: "Design System Contribution and Documentation, Interface Design, CSS Implementation",
+    url: "https://glimmer-glitter-2bd.notion.site/GoNoodle-2dea30ccaa5347209cb9a876b212449a",
   },
 };
