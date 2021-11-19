@@ -11,6 +11,8 @@ import Bball1 from "./assets/img/p-mindfullness.jpg";
 import Portfolio3 from "./assets/img/p-mya.jpg";
 import Portfolio4 from "./assets/img/p-bod-2.png";
 import BankBg from "./assets/img/p-bod-bg.jpg";
+import BankT from "./assets/img/p-bod-thumb.png";
+import BankL from "./assets/img/p-bod-latest.png";
 import Bank0 from "./assets/img/p-bod-0.jpg";
 import Bank1 from "./assets/img/p-bod-1.png";
 import Bank2 from "./assets/img/p-bod-2.png";
@@ -149,18 +151,18 @@ export default function App() {
             alt="Design System for GoNoodle"
           />
           <img
+            style={{ cursor: "pointer"}}
+            src={BankT}
+            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100"
+            onClick={() => setProjectName("homeBank")}
+            alt="Fintech for kids and families"
+          />
+          <img
             style={{ cursor: "pointer", filter: "saturate(0)" }}
             src={Signal3}
             className="transition duration-700 ease-in-out transform scale-95 hover:scale-100"
             onClick={() => setProjectName("miscApps")}
             alt="Misc App Designs"
-          />
-          <img
-            style={{ cursor: "pointer", filter: "saturate(0)" }}
-            src={Portfolio4}
-            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100"
-            onClick={() => setProjectName("homeBank")}
-            alt="Fintech for kids and families"
           />
           
         </div>
@@ -233,7 +235,7 @@ var projects: Projects = {
     title: "Financial Literacy for Kids and Families",
     description:
       "As a parent, I want my child to view money unemotionally, so they can use it as a practical tool for improving their lives. To that end, I wanted to explore a product that borrows from traditional chore/reward model while helping parents teach their children how to grow their money over time and give back. I've spent a few cycles generating ideas, protoyping, and testing.",
-    images: [Bank2],
+    images: [BankL],
     background: "",
     caption: "Ideation, Hi-Fidelity Prototypes, Work-In-Progress",
     url: "https://glimmer-glitter-2bd.notion.site/Rags-to-Riches-cf77cbcdf22946a8bd5f36a7cacf27ba",
