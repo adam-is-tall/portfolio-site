@@ -185,7 +185,7 @@ export default function App() {
         <div className="relative p-md py-lg sm:p-lg md:p-lg lg:p-2xl">
           {/* <img className="absolute -right-52 top-0 w-2/12" src={shapeStack3} /> */}
           <ChatBubble frames={adamHeads3} className="mb-3xl">
-            After 10+ years of working in agencies, I'm now working with product teams. I'd like to join a team that values design and truly cares about the people who use their products. If that sounds like you, please get in touch and let's talk about it!
+            I'm currently looking for a product team in an organization that values design and truly cares about the people who use their products. I'm especially interested in serving kids, teachers, and families. If you know of an opportunity like this, please get in touch and let's talk about it!
           </ChatBubble>
           <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-xl">
             <img className="absolute object-center w-full md:w-1/2 transform transition hover:scale-105" src={sketchBigCircle} alt="Sketched Circle"/>
