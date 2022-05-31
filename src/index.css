@@ -43,11 +43,11 @@ html {
 }
 
 .font-medium-buddy {
-  font-family: "jubilat", "proxima-nova", sans-serif;
-  font-weight: 400;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 300;
   font-style: normal;
   line-height: 100%;
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .font-little-buddy {
@@ -58,12 +58,20 @@ html {
   font-size: 16px;
 }
 
-.font-test {
+.font-little-buddy-sans-bold {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  line-height: 115%;
-  font-size: 30px;
+  font-weight: 400;
+  line-height: 100%;
+  font-size: 16px;
+}
+
+.font-little-buddy-sans {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  font-size: 16px;
 }
 
 .font-speech {

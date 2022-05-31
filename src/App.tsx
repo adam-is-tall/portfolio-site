@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { ReactComponent as LogoVert } from "./assets/img/AH-vert.svg";
-import { ReactComponent as LogoHoriz } from "./assets/img/AH-horiz.svg";
-import { ReactComponent as LogoSide } from "./assets/img/AH-sidebyside.svg";
+import { ReactComponent as LogoVert } from "./assets/img/AH2-vert.svg";
+import { ReactComponent as LogoSide } from "./assets/img/AH2-horiz.svg";
 import { ReactComponent as DesignSystem } from "./assets/img/design-system.svg";
 import { ReactComponent as DesignInterfaceTop } from "./assets/img/design-interface-top.svg";
 import { ReactComponent as DesignInterfaceBottom } from "./assets/img/design-interface-bottom.svg";
@@ -19,13 +18,14 @@ import Bank0 from "./assets/img/p-bod-0.jpg";
 import Bank1 from "./assets/img/p-bod-1.png";
 import Bank2 from "./assets/img/p-bod-2.png";
 import Bank3 from "./assets/img/p-bod-3.png";
+import SignalT from "./assets/img/p-signal-thumb.png";
 import Signal0 from "./assets/img/p-signal.jpg";
 import Signal1 from "./assets/img/p-signal-1.jpg";
 import Signal2 from "./assets/img/p-signal-2.jpg";
 import Signal3 from "./assets/img/p-signal-3.jpg";
 import Signal4 from "./assets/img/p-signal-4.jpg";
-import Gn2T from "./assets/img/p-gn2-thumb.jpg";
-import Gn2_1 from "./assets/img/p-gn2-thumb.jpg";
+import Gn2T from "./assets/img/p-gn2-thumb.png";
+import Gn2_1 from "./assets/img/p-gn2-1.jpg";
 import Gn2_2 from "./assets/img/p-gn2-figjam-screenshot.png";
 import Gn0 from "./assets/img/p-gn.jpg";
 import Gn1 from "./assets/img/p-gn-system.jpg";
@@ -37,6 +37,7 @@ import sketchArrow from "./assets/img/sketch-down-arrow.png";
 import sketchShow from "./assets/img/sketch-showwork.png";
 import sketchCTA from "./assets/img/cta-sketch.png";
 import { Button } from "./cmpts/Button";
+import { IconButton } from "./cmpts/IconButton";
 import { Project } from "./cmpts/Project";
 import { ChatBubble } from "./cmpts/ChatBubble";
 
@@ -73,7 +74,7 @@ export default function App() {
     <div className="flex bg-repeat dot-bg overflow-hidden">
       {/* Left Nav */}
       <div className="hidden sm:block sm:w-20 md:w-24 bg-coral"></div>
-      <div className={`z-50 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 transition-colors transform duration-500 ease-in-out ${showCloseAction ? "border-gray bg-gray-light" : "border-aqua bg-aqua-light"}`}>
+      <div className={`z-50 fixed w-full sm:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 transition-colors transform duration-500 ease-in-out ${showCloseAction ? "border-gray bg-gray-light" : "border-gray bg-gray-light"}`}>
       {/* <div className="z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 border-aqua bg-aqua-light"> */}
         <div id="logo" className="flex flex-row sm:flex-col">
           <div className="">
@@ -97,40 +98,53 @@ export default function App() {
         </div>
 
         <div className="w-full hidden sm:block">
-          <h1 className="font-little-buddy text-center">Adam Howard</h1>
+          <h1 className="font-little-buddy-sans-bold text-center">Adam Howard</h1>
           <img src={SketchLine} alt="sketched line" />
-          <h1 className="font-little-buddy text-center py-xs">Product Design</h1>
+          <h1 className="font-little-buddy-sans text-center py-xs">Product Designer</h1>
         </div>
         
-        <a className="tiny-button font-tiny text-center py-xs" href="mailto:howard.adamp@gmail.com?subject=Hi, Adam!">Contact</a>
+        {/* <a className="tiny-button font-tiny text-center py-xs" href="mailto:howard.adamp@gmail.com?subject=Hi, Adam!">Contact</a> */}
+        <div className="w-1/12 sm:w-full mb-sm">
+          <IconButton text="Contact" email="howard.adamp@gmail.com?subject=Hi, Adam!"/>
+        </div>
       </div>
       {/* Page Container */}
       <div className={`container relative mx-auto transition delay-500 ${showCloseAction ? "opacity-0" : "opacity-100"}`}>
         <div className="relative flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:px-2xl lg:py-xl lg:pt-lg mt-md md:mt-0 text-center">
           <img className="absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} alt="sketched circle"/>
           <ChatBubble direction="right">
-          Hello! I'm Adam. I’m a Senior Product Designer who loves to collaborate! I believe designers should facilitate, so I bring everyone along -  working with cross-functional teams to create great products. I answer only to the users. And I like to have fun doing it!  
+          Hello! I'm Adam. I’m a Senior Product Designer based in Nashville, USA. I help drive the end-to-end design process while collaborating with cross-functional teams. In other words, teamwork makes the dream work! I want to be fun to work with and serious about the work we do together. Scroll, please. 
           </ChatBubble>
           <img className="absolute left-1/3 -bottom-6 w-6 md:w-10" src={sketchArrow} alt="sketched arrow"/>
         </div>
         <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
-          <h2 className="font-big-buddy mb-sm">How I Work</h2>
+          {/* <h2 className="font-medium-buddy mb-sm">How I Work</h2> */}
           <p className="font-speech lg:px-md">
-            Understanding people is an essential to great design. To inform my design choices I gather insight from interviews, surveys, and analytics.
+          Understanding people is essential to great design. To inform my design choices I gather insight from interviews, surveys, and analytics.
+          </p>
+          <p className="font-medium-buddy mt-sm lg:px-md">
+          (I've gotten to know lots of interesting people this way)
           </p>
         </div>
         <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl  lg:pb-lg text-center">
           <SpotCollabLofi className="w-full mb-md px-sm" />
           <p className="font-speech lg:px-md">
-          Collaboration between teams is everything. I include people in the design process, through the use of artifacts like virtual whiteboards, sketches, and design prototypes. 
+          Collaboration between teams is critical. I want people to feel included in the design process, with real-time and asynchronous communication using virtual whiteboards, sketches, diagrams, and design prototypes. 
           </p>
+          <p className="font-medium-buddy mt-sm lg:px-md">
+          (I even invite people to stand over my shoulder while I'm designing something)
+          </p>
+          
           <SpotCollabHifi className="w-full mt-md" />
         </div>
 
         <div className="relative flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
           {/* <h2 className="font-big-buddy mb-sm">Design Systems</h2> */}
           <p className="font-speech lg:px-md">
-          The solutions I help create balance the technical and business needs, while always advocating for the user. I work with engineers to make sure design systems are well implemented, documented and maintained.
+          The solutions I help create balance the technical and business needs, while always advocating for the user. I work with engineers to make sure design systems are well implemented, documented and maintained.  
+          </p>
+          <p className="font-medium-buddy mt-sm lg:px-md">
+          (I spend lots of time w/ engineers across multiple timezones)
           </p>
           <DesignSystem className="w-full md:mt-lg" />
           <img className="absolute right-0 -bottom-16 w-32 md:w-60" src={sketchShow} alt="sketched arrow"/>
@@ -159,23 +173,23 @@ export default function App() {
           <img
             style={{ cursor: "pointer"}}
             src={Gn2T}
-            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100"
+            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100 sm:p-lg"
             onClick={() => setProjectName("goNoodleAgain")}
-            alt="Design System for GoNoodle"
+            alt="Improving a much loved product"
           />
           <img
-            style={{ cursor: "pointer", filter: "saturate(0)" }}
-            src={Signal3}
-            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100"
+            style={{ cursor: "pointer"}}
+            src={SignalT}
+            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100 sm:p-lg"
             onClick={() => setProjectName("miscApps")}
-            alt="Misc App Designs"
+            alt="Quantity and Quality?"
           />
           <img
             style={{ cursor: "pointer"}}
             src={BankT}
-            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100"
+            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100 sm:p-lg"
             onClick={() => setProjectName("homeBank")}
-            alt="Fintech for kids and families"
+            alt="Can you teach a kid to grow their money?"
           />
           
         </div>
@@ -198,11 +212,11 @@ export default function App() {
         <div className="relative p-md py-lg sm:p-lg md:p-lg lg:p-2xl">
           {/* <img className="absolute -right-52 top-0 w-2/12" src={shapeStack3} /> */}
           <ChatBubble frames={adamHeads3} className="mb-lg">
-            I'm currently looking for a Senior Product Designer role in an organization that values the role design plays in the business. I'm especially interested in a product serving kids, teachers, and families. If you know of an opportunity like this, please get in touch, and let's talk about it!
+          I'm currently looking for a Senior Product Designer role in an organization providing a valuable service to people who they truly care about. If you have an interesting problem, and a group of interesting people, please consider talking about how I can help. 
           </ChatBubble>
           <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-sm mb-xl">
-            <img className="absolute object-center w-full md:w-1/3 transform transition hover:scale-105" src={sketchCTA} alt="Sketched Circle"/>
-            <Button email="howard.adamp@gmail.com?subject=Hi, Adam!" className="mt-2xl z-10" text="Let's do this thing!" />
+            <img className="absolute object-center w-full md:w-1/2 transform" src={sketchCTA} alt="Sketched Circle"/>
+            <Button email="howard.adamp@gmail.com?subject=Hi, Adam!" className="mt-2xl z-10" text="Contact Me" />
           </div>
         </div>
         <div className="relative">
@@ -244,24 +258,25 @@ var projects: Projects = {
     url: "http://www.google.com",
   },
   homeBank: {
-    title: "Financial Literacy for Kids and Families",
+    title: "Can you teach a kid to grow their money?",
     description:
-      "As a parent, I want my child to view money unemotionally, so they can use it as a practical tool for improving their lives. To that end, I wanted to explore a product that borrows from traditional chore/reward model while helping parents teach their children how to grow their money over time and give back. I've spent a few cycles generating ideas, protoyping, and testing.",
+      "As a parent, I want my child to view money as a practical tool for improving their lives. To that end, I wanted to explore a product that borrows from traditional chore/reward model while helping parents teach their children how to grow their money over time and give back. I've spent a few cycles generating ideas, protoyping, and testing.",
     images: [BankL],
     background: "",
     caption: "Ideation, Hi-Fidelity Prototypes, Work-In-Progress",
     url: "https://glimmer-glitter-2bd.notion.site/Rags-to-Riches-cf77cbcdf22946a8bd5f36a7cacf27ba",
   },
   miscApps: {
-    title: "30,000 Hours of Design Experience",
+    title: "Quantity and Quality?",
     description:
-      "I'm adept at asking the right questions, collaborating, and building solutions that work. These slides represent the hundreds of projects that I worked on as a UX/UI Designer at Signal in Raleigh, NC. Notable clients include GE Power, John Deere, Ingersoll Rand and Syngenta.",
+      "For much of my career, I was the lead designer on an agile team, building applications across various domains and industries. During this time, I developed my ability to not only wireframe, prototype, and build UI but my ability to use design to facilitate the process between teams and stakeholders.",
     images: [Signal3, Signal0, Signal2, Signal1],
     background: "",
-    caption: "Ideation/Sketching, Lo-Fidelity Prototypes, Hi-Fidelity Prototypes, User-Testing, CSS",
+    caption: "Lead Product Designer, Design Director",
+    url: "https://glimmer-glitter-2bd.notion.site/Quantity-and-quality-76acb68d11ec4f47bcce3d93b52ec935",
   },
   goNoodleAgain: {
-    title: "Improving a much loved feature, with limited dev capacity.",
+    title: "Improving a much loved product.",
     description:
       "By asking the right questions, we uncovered opportunity to create meaningful moments that drove usage.",
     images: [Gn2_1, Gn2_2],
