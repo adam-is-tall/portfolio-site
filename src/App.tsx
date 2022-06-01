@@ -122,7 +122,7 @@ export default function App() {
           <p className="font-speech lg:px-md">
           Understanding people is essential to creating well designed products. To inform design choices, I gather insight from interviews, surveys, and analytics.
           </p>
-          <p className="font-medium-buddy mt-sm lg:px-md">
+          <p className="font-tiny-buddy mt-sm lg:px-md">
           (I've gotten to know lots of interesting people this way)
           </p>
         </div>
@@ -131,8 +131,8 @@ export default function App() {
           <p className="font-speech lg:px-md">
           Collaboration between teams is critical. I want people to be included in the design process. I use real-time and asynchronous communication with virtual whiteboards, sketches, diagrams, and design prototypes. 
           </p>
-          <p className="font-medium-buddy mt-sm lg:px-md">
-          (I don't even mind people standing over my shoulder)
+          <p className="font-tiny-buddy mt-sm lg:px-md">
+          (I'm a strong visual and interaction designer but I need to understand different perspectives to arrive at a solution)
           </p>
           
           <SpotCollabHifi className="w-full mt-md" />
@@ -143,8 +143,8 @@ export default function App() {
           <p className="font-speech lg:px-md">
           The solutions I help create balance the technical and business needs, while always advocating for the user. I work with engineers to make sure design systems are well implemented, documented and maintained.  
           </p>
-          <p className="font-medium-buddy mt-sm lg:px-md">
-          (I spend lots of time w/ engineers across multiple timezones)
+          <p className="font-tiny-buddy mt-sm lg:px-md">
+          (I've been known to contribute code to production. It's not my passion, however.)
           </p>
           <DesignSystem className="w-full md:mt-lg" />
           <img className="absolute right-0 -bottom-16 w-32 md:w-60" src={sketchShow} alt="sketched arrow"/>
