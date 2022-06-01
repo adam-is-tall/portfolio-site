@@ -113,26 +113,26 @@ export default function App() {
         <div className="relative flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:px-2xl lg:py-xl lg:pt-lg mt-md md:mt-0 text-center">
           <img className="absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} alt="sketched circle"/>
           <ChatBubble direction="right">
-          Hello! I'm Adam. I drive the end-to-end design process while collaborating with cross-functional teams. In other words, teamwork makes the dream work! I'm fun to work with and serious about the work we do together. Want to learn more? Scroll, please. 
+          Hello! My name is Adam. What’s your name? I’m a Product Designer with a strong visual design sense, a curiosity for why humans make decisions, and a strong belief in the power of collaboration. Want to know more about me? Scroll, please! 
           </ChatBubble>
           <img className="absolute left-1/3 -bottom-6 w-6 md:w-10" src={sketchArrow} alt="sketched arrow"/>
         </div>
         <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
           {/* <h2 className="font-medium-buddy mb-sm">How I Work</h2> */}
           <p className="font-speech lg:px-md">
-          Understanding people is essential to creating well designed products. To inform design choices, I gather insight from interviews, surveys, and analytics.
+          Understanding people is essential to creating well-designed products. To inform design choices, I gather insight from interviews, surveys, and analytics.
           </p>
           <p className="font-tiny-buddy mt-sm lg:px-md">
-          (I've gotten to know lots of interesting people this way)
+          (I've understood lots of interesting people this way)
           </p>
         </div>
         <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl  lg:pb-lg text-center">
           <SpotCollabLofi className="w-full mb-md px-sm" />
           <p className="font-speech lg:px-md">
-          Collaboration between teams is critical. I want people to be included in the design process. I use real-time and asynchronous communication with virtual whiteboards, sketches, diagrams, and design prototypes. 
+          Collaboration within teams is critical. I want people to be included in the design process. I collaborate and communictate using virtual whiteboards, sketches, diagrams, and design prototypes. 
           </p>
           <p className="font-tiny-buddy mt-sm lg:px-md">
-          (I'm a strong visual and interaction designer but I need to understand different perspectives to arrive at a solution)
+          (I welcome different perspectives and strive for an ego-free attitude.)
           </p>
           
           <SpotCollabHifi className="w-full mt-md" />
@@ -144,7 +144,7 @@ export default function App() {
           The solutions I help create balance the technical and business needs, while always advocating for the user. I work with engineers to make sure design systems are well implemented, documented and maintained.  
           </p>
           <p className="font-tiny-buddy mt-sm lg:px-md">
-          (I've been known to contribute code to production. It's not my passion, however.)
+          (I think about how a design solution works as part of a system)
           </p>
           <DesignSystem className="w-full md:mt-lg" />
           <img className="absolute right-0 -bottom-16 w-32 md:w-60" src={sketchShow} alt="sketched arrow"/>
