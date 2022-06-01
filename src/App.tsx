@@ -260,7 +260,7 @@ var projects: Projects = {
   homeBank: {
     title: "Can you teach a kid to grow their money?",
     description:
-      "As a parent, I want my child to view money as a practical tool for improving their lives. To that end, I wanted to explore a product that borrows from traditional chore/reward model while helping parents teach their children how to grow their money over time and give back. I've spent a few cycles generating ideas, protoyping, and testing.",
+      "As a parent, I want my child to view money as a practical tool for improving their lives. To that end, I wanted to explore a product that borrows from traditional chore/reward model while helping parents teach their children how to grow their money over time and give back.",
     images: [BankL],
     background: "",
     caption: "Ideation, Hi-Fidelity Prototypes, Work-In-Progress",
@@ -278,7 +278,7 @@ var projects: Projects = {
   goNoodleAgain: {
     title: "Improving a much loved product.",
     description:
-      "By asking the right questions, we uncovered opportunity to create meaningful moments that drove usage.",
+      "By asking the right questions, we uncovered opportunity to create meaningful moments to help drive daily usage of a tool for teachers.",
     images: [Gn2_1, Gn2_2],
     background: "",
     caption: "Lead Product Designer",
