@@ -212,7 +212,7 @@ export default function App() {
         <div className="relative p-md py-lg sm:p-lg md:p-lg lg:p-2xl">
           {/* <img className="absolute -right-52 top-0 w-2/12" src={shapeStack3} /> */}
           <ChatBubble frames={adamHeads3} className="mb-lg">
-          I'm currently looking for a role in an organization providing a valuable service to people they truly care about. If you have an interesting problem, and a group of interesting people, let's talk about how I can help. 
+          I'm currently looking for a Product Design role in an organization providing a valuable service to people they truly care about. If you have an interesting problem, and a group of interesting people, let's talk about how I can help. 
           </ChatBubble>
           <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-sm mb-xl">
             <img className="absolute object-center w-full md:w-1/2 transform" src={sketchCTA} alt="Sketched Circle"/>
