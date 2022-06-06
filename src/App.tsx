@@ -267,7 +267,7 @@ var projects: Projects = {
     url: "https://glimmer-glitter-2bd.notion.site/Rags-to-Riches-cf77cbcdf22946a8bd5f36a7cacf27ba",
   },
   miscApps: {
-    title: "Quantity and Quality?",
+    title: "Zero to Hero",
     description:
       "For much of my career, I was the lead designer on an agile team, building applications across various domains and industries. During this time, I developed my ability to not only wireframe, prototype, and build UI but my ability to use design to facilitate the process between teams and stakeholders.",
     images: [Signal3, Signal0, Signal2, Signal1],
