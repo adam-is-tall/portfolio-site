@@ -120,11 +120,11 @@ export default function App() {
         <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
           {/* <h2 className="font-medium-buddy mb-sm">How I Work</h2> */}
           <p className="font-speech lg:px-md">
-          Understanding people is essential to creating well-designed products. To inform design choices, I use whatever technique helps develop empathy.
+          Understanding people is essential to creating well-designed products. To inform design choices, I use whatever research technique helps me develop empathy.
           </p>
-          <p className="font-tiny-buddy mt-sm lg:px-md">
+          {/* <p className="font-tiny-buddy mt-sm lg:px-md">
           (I listen more than I talk and my curiosity leads to good questions)
-          </p>
+          </p> */}
         </div>
         <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-md text-center">
           <SpotCollabLofi className="w-full mb-md px-sm" />
