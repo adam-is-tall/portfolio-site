@@ -113,7 +113,7 @@ export default function App() {
         <div className="relative flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:px-2xl lg:py-xl lg:pt-lg mt-md md:mt-0 text-center">
           <img className="absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} alt="sketched circle"/>
           <ChatBubble direction="right">
-          Hello! My name is Adam. I'm a Product Designer with a strong visual design sense, a curiosity for why humans make the decisions they make, and a strong belief in the power of team collaboration. Want to know more about me? Scroll, please! 
+          Hello! My name is Adam. I'm a Product Designer with a strong visual design sense, empathy for users, and dedication to team collaboration. Want to know more about me? Scroll, please! 
           </ChatBubble>
           <img className="absolute left-1/3 -bottom-6 w-6 md:w-10" src={sketchArrow} alt="sketched arrow"/>
         </div>
