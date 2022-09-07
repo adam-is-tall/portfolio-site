@@ -120,16 +120,16 @@ export default function App() {
         <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
           {/* <h2 className="font-medium-buddy mb-sm">How I Work</h2> */}
           <p className="font-speech lg:px-md">
-          Understanding people is essential to creating well-designed products. To inform design choices, I gather insight from interviews, surveys, and analytics.
+          Understanding people is essential to creating well-designed products. To inform design choices, I use whatever technique helps develop empathy.
           </p>
           <p className="font-tiny-buddy mt-sm lg:px-md">
-          (I've understood lots of interesting people this way)
+          (I listen more than I talk and my curiosity leads to good questions)
           </p>
         </div>
         <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-md text-center">
           <SpotCollabLofi className="w-full mb-md px-sm" />
           <p className="font-speech lg:px-md">
-          Collaboration within teams is critical. I want people to be included in the design process. I collaborate and communictate using virtual whiteboards, sketches, diagrams, and design prototypes. 
+          Collaboration is critical. I want people to be included in the design process. I'm comfortable with facilitation and working in ambiguity as part of a team. 
           </p>
           <p className="font-tiny-buddy mt-sm lg:px-md">
           (I welcome different perspectives and strive for an ego-free attitude.)
@@ -144,7 +144,7 @@ export default function App() {
           The solutions I help create balance the technical and business needs, while always advocating for the user. I work with engineers to make sure design systems are well implemented, documented and maintained.  
           </p>
           <p className="font-tiny-buddy mt-sm lg:px-md">
-          (I think about how a design solution works as part of a system)
+          (FWIW, Some of the best people I've met are engineers)
           </p>
           <DesignSystem className="w-full md:mt-lg" />
           <img className="absolute right-0 -bottom-16 w-32 md:w-60" src={sketchShow} alt="sketched arrow"/>
