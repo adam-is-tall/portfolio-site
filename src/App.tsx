@@ -131,9 +131,9 @@ export default function App() {
           <p className="font-speech lg:px-md">
           Collaboration is critical. I want people to be included in the design process. I'm comfortable with facilitation and working in ambiguity as part of a team. 
           </p>
-          <p className="font-tiny-buddy mt-sm lg:px-md">
+          {/* <p className="font-tiny-buddy mt-sm lg:px-md">
           (I welcome different perspectives and strive for an ego-free attitude.)
-          </p>
+          </p> */}
           
           <SpotCollabHifi className="w-full mt-md" />
         </div>
@@ -143,9 +143,9 @@ export default function App() {
           <p className="font-speech lg:px-md">
           The solutions I help create balance the technical and business needs, while always advocating for the user. I work with engineers to make sure design systems are well implemented, documented and maintained.  
           </p>
-          <p className="font-tiny-buddy mt-sm lg:px-md">
+          {/* <p className="font-tiny-buddy mt-sm lg:px-md">
           (FWIW, Some of the best people I've met are engineers)
-          </p>
+          </p> */}
           <DesignSystem className="w-full md:mt-lg" />
           <img className="absolute right-0 -bottom-16 w-32 md:w-60" src={sketchShow} alt="sketched arrow"/>
         </div>
