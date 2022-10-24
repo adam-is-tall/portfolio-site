@@ -18,19 +18,21 @@ import Bank0 from "./assets/img/p-bod-0.jpg";
 import Bank1 from "./assets/img/p-bod-1.png";
 import Bank2 from "./assets/img/p-bod-2.png";
 import Bank3 from "./assets/img/p-bod-3.png";
-import SignalT from "./assets/img/p-signal-thumb.png";
+import SignalT from "./assets/img/p-thumb-vert-sig.jpg";
 import Signal0 from "./assets/img/p-signal.jpg";
 import Signal1 from "./assets/img/p-signal-1.jpg";
 import Signal2 from "./assets/img/p-signal-2.jpg";
 import Signal3 from "./assets/img/p-signal-3.jpg";
 import Signal4 from "./assets/img/p-signal-4.jpg";
-import Gn2T from "./assets/img/p-gn2-thumb.png";
+import GnT from "./assets/img/p-thumb-vert-gn.jpg";
 import Gn2_1 from "./assets/img/p-gn2-1.jpg";
 import Gn2_2 from "./assets/img/p-gn2-figjam-screenshot.png";
 import Gn0 from "./assets/img/p-gn.jpg";
 import Gn1 from "./assets/img/p-gn-system.jpg";
 import Gn2 from "./assets/img/p-gn-screens.jpg";
 import Gn3 from "./assets/img/p-gn-components.jpg";
+import OmniT from "./assets/img/p-thumb-vert-omni.jpg";
+import Omni1 from "./assets/img/omnisys-journey.png";
 import sketchBigCircle from "./assets/img/sketch-bigcircle.png";
 import sketchCircle from "./assets/img/sketch-circle.png";
 import sketchArrow from "./assets/img/sketch-down-arrow.png";
@@ -58,7 +60,7 @@ const adamHeads1 = [ah1, ah2, oh1, r];
 const adamHeads2 = [oh1 , ah2, ah1];
 const adamHeads3 = [r, oh2, ah2, ah1];
 
-type ProjectNames = "headGame" | "homeBank" | "miscApps" | "goNoodle" | "goNoodleAgain";
+type ProjectNames = "headGame" | "homeBank" | "miscApps" | "goNoodle" | "goNoodleAgain" | "omniStrand";
 
 export default function App() {
   const [projectName, setProjectName] = useState<ProjectNames | null>(null);
@@ -113,47 +115,45 @@ export default function App() {
         <div className="relative flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:px-2xl lg:py-xl lg:pt-lg mt-md md:mt-0 text-center">
           <img className="absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} alt="sketched circle"/>
           <ChatBubble direction="right">
-          Hello! My name is Adam. I'm a Product Designer with a strong visual design sense, empathy for users, and dedication to team collaboration. Want to know more about me? Scroll, please! 
+          Hello! I’m Adam. Thanks for coming to see my Product Design portfolio. Let’s get to it! 
           </ChatBubble>
           <img className="absolute left-1/3 -bottom-6 w-6 md:w-10" src={sketchArrow} alt="sketched arrow"/>
         </div>
-        <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
-          {/* <h2 className="font-medium-buddy mb-sm">How I Work</h2> */}
+        {/* <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
           <p className="font-speech lg:px-md">
           Understanding people is essential to creating well-designed products. To inform design choices, I use whatever research technique helps me develop empathy.
           </p>
-          {/* <p className="font-tiny-buddy mt-sm lg:px-md">
+          <p className="font-tiny-buddy mt-sm lg:px-md">
           (I listen more than I talk and my curiosity leads to good questions)
-          </p> */}
-        </div>
-        <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-md text-center">
+          </p> 
+        </div> */}
+        {/* <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-md text-center">
           <SpotCollabLofi className="w-full mb-md px-sm" />
           <p className="font-speech lg:px-md">
           Collaboration is critical. I want people to be included in the design process. I'm comfortable with facilitation and working in ambiguity as part of a team. 
           </p>
-          {/* <p className="font-tiny-buddy mt-sm lg:px-md">
+          <p className="font-tiny-buddy mt-sm lg:px-md">
           (I welcome different perspectives and strive for an ego-free attitude.)
-          </p> */}
-          
+          </p> 
           <SpotCollabHifi className="w-full mt-md" />
-        </div>
+        </div> */}
 
-        <div className="relative flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
-          {/* <h2 className="font-big-buddy mb-sm">Design Systems</h2> */}
+        {/* <div className="relative flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
+          <h2 className="font-big-buddy mb-sm">Design Systems</h2>
           <p className="font-speech lg:px-md">
           The solutions I help create balance the technical and business needs, while always advocating for the user. I work with engineers to make sure design systems are well implemented, documented and maintained.  
           </p>
-          {/* <p className="font-tiny-buddy mt-sm lg:px-md">
+          <p className="font-tiny-buddy mt-sm lg:px-md">
           (FWIW, Some of the best people I've met are engineers)
-          </p> */}
+          </p>
           <DesignSystem className="w-full md:mt-lg" />
           <img className="absolute right-0 -bottom-16 w-32 md:w-60" src={sketchShow} alt="sketched arrow"/>
-        </div>
+        </div> */}
         {/* <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
           <ChatBubble className="mb-lg" frames={adamHeads2}>Take a look at some of my work!</ChatBubble>
         </div> */}
         {/* <iframe style={{"border": "1px solid rgba(0, 0, 0, 0.1);"}} width="100%" height="750" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCdTDvUhRE0QYEQ0oWBSa5K%2FBank-of-Dad%3Fnode-id%3D268%253A624"></iframe> */}
-        <div className="grid grid-flow-row grid-cols-1 grid-rows-2 gap-sm p-sm text-center pt-lg">
+        <div className="grid grid-flow-row grid-cols-3 grid-rows-1 gap-sm p-sm text-center pt-lg">
           {/* <img
             style={{ cursor: "pointer", filter: "saturate(0)" }}
             src={Bball1}
@@ -163,7 +163,7 @@ export default function App() {
           /> */}
           
           {/* <img
-            style={{ cursor: "pointer"}}
+            style={{ cursor: "pointer", filter: "saturate(0)"}}
             src={GnT}
             className="transition duration-700 ease-in-out transform scale-95 hover:scale-100"
             onClick={() => setProjectName("goNoodle")}
@@ -172,23 +172,23 @@ export default function App() {
 
           <img
             style={{ cursor: "pointer"}}
-            src={Gn2T}
-            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100 sm:p-lg"
+            src={GnT}
+            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100 sm:p-sm"
             onClick={() => setProjectName("goNoodleAgain")}
-            alt="Improving a much loved product"
+            alt="Understanding Classroom Moments"
           />
           <img
             style={{ cursor: "pointer"}}
             src={SignalT}
-            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100 sm:p-lg"
+            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100 sm:p-sm"
             onClick={() => setProjectName("miscApps")}
             alt="Quantity and Quality?"
           />
           <img
             style={{ cursor: "pointer"}}
-            src={BankT}
-            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100 sm:p-lg"
-            onClick={() => setProjectName("homeBank")}
+            src={OmniT}
+            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100 sm:p-sm"
+            onClick={() => setProjectName("omniStrand")}
             alt="Can you teach a kid to grow their money?"
           />
           
@@ -212,7 +212,7 @@ export default function App() {
         <div className="relative p-md py-lg sm:p-lg md:p-lg lg:p-2xl">
           {/* <img className="absolute -right-52 top-0 w-2/12" src={shapeStack3} /> */}
           <ChatBubble frames={adamHeads3} className="mb-lg">
-          I'm currently looking for a Product Design role in an organization providing a valuable service to people they truly care about. If you have an interesting problem, and a group of interesting people, let's talk about how I can help. 
+          And there you have it! Please contact me if you'd like to discuss any opportunities.   
           </ChatBubble>
           <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-sm mb-xl">
             <img className="absolute object-center w-full md:w-1/2 transform" src={sketchCTA} alt="Sketched Circle"/>
@@ -267,21 +267,21 @@ var projects: Projects = {
     url: "https://glimmer-glitter-2bd.notion.site/Rags-to-Riches-cf77cbcdf22946a8bd5f36a7cacf27ba",
   },
   miscApps: {
-    title: "Zero to Hero",
+    title: "Zero to One",
     description:
-      "For much of my career, I was the lead designer on an agile team, building applications across various domains and industries. During this time, I developed my ability to not only wireframe, prototype, and build UI but my ability to use design to facilitate the process between teams and stakeholders.",
+      "I have deep experience designing 0 to 1 applications for Startups and Large Companies. As the lead UX Designer at an agency for over 10 years, I developed my ability to ask the right questions to understand context and to work well with everyone from users, to stakeholders, to engineers.",
     images: [Signal3, Signal0, Signal2, Signal1],
     background: "",
-    caption: "Lead Product Designer, Design Director",
+    caption: "Discovery, Prototyping, UI Design, UX Design, User Testing",
     url: "https://glimmer-glitter-2bd.notion.site/Quantity-and-quality-76acb68d11ec4f47bcce3d93b52ec935",
   },
   goNoodleAgain: {
-    title: "Improving a much loved product.",
+    title: "Understanding Classroom Moments",
     description:
-      "By asking the right questions, we uncovered opportunity to create meaningful moments to help drive daily usage of a tool for teachers.",
-    images: [Gn2_1, Gn2_2],
+      "Teachers are essential to GoNoodle. They are part of a community that is eager to promote and share. While working with the Head of Design and the Support team, we put together surveys and interviews - hoping we could uncover some opportunities to add more value. ",
+    images: [Gn2_2],
     background: "",
-    caption: "Lead Product Designer",
+    caption: "Research, Ideation, Testing",
     url: "https://glimmer-glitter-2bd.notion.site/Improving-a-much-loved-feature-ebf55c7869ae49daad93063e92b338a4",
   },
   goNoodle: {
@@ -293,4 +293,13 @@ var projects: Projects = {
     caption: "Design System Contribution and Documentation, Interface Design, CSS Implementation",
     url: "https://glimmer-glitter-2bd.notion.site/GoNoodle-2dea30ccaa5347209cb9a876b212449a",
   },
+  omniStrand: {
+    title: "Closing the Care Gap",
+    description:
+      "With young products, opportunities for improvement are everywhere! We worked with internal and external stakeholders to decide what goes on the roadmap and how we incrementally improve the UX.",
+    images: [Omni1],
+    background: "",
+    caption: "Research, Discovery, Rapid Prototyping",
+    url: "https://glimmer-glitter-2bd.notion.site/Beyond-MVP-a8ced803893342e599e9e5b60e5e854f",
+  }
 };
