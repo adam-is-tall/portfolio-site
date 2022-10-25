@@ -115,7 +115,7 @@ export default function App() {
         <div className="relative flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:px-2xl lg:py-xl lg:pt-lg mt-md md:mt-0 text-center">
           <img className="absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} alt="sketched circle"/>
           <ChatBubble direction="right">
-          Hello! I’m Adam. Thanks for coming to see my Product Design portfolio. Let’s get to it! 
+          Hello! I'm a designer who loves making products that balance user needs with business value. Thanks for coming to see my portfolio. Let's get to it! 
           </ChatBubble>
           <img className="absolute left-1/3 -bottom-6 w-6 md:w-10" src={sketchArrow} alt="sketched arrow"/>
         </div>
@@ -212,7 +212,7 @@ export default function App() {
         <div className="relative p-md py-lg sm:p-lg md:p-lg lg:p-2xl">
           {/* <img className="absolute -right-52 top-0 w-2/12" src={shapeStack3} /> */}
           <ChatBubble frames={adamHeads3} className="mb-lg">
-          And there you have it! Please contact me if you'd like to discuss any opportunities.   
+          Hey! Please contact me if you have any opportunities. Thanks again for scrolling all the way down here!   
           </ChatBubble>
           <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-sm mb-xl">
             <img className="absolute object-center w-full md:w-1/2 transform" src={sketchCTA} alt="Sketched Circle"/>
@@ -296,7 +296,7 @@ var projects: Projects = {
   omniStrand: {
     title: "Closing the Care Gap",
     description:
-      "With young products, opportunities for improvement are everywhere! We worked with internal and external stakeholders to decide what goes on the roadmap and how we incrementally improve the UX.",
+      "Design is never done and opportunities for improvement are everywhere! We worked with users and internal stakeholders to decide what goes on the roadmap and how we improve the product over time.",
     images: [Omni1],
     background: "",
     caption: "Research, Discovery, Rapid Prototyping",
