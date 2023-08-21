@@ -60,7 +60,7 @@ const adamHeads1 = [ah1, ah2, oh1, r];
 const adamHeads2 = [oh1 , ah2, ah1];
 const adamHeads3 = [r, oh2, ah2, ah1];
 
-type ProjectNames = "headGame" | "homeBank" | "miscApps" | "goNoodle" | "goNoodleAgain" | "omniStrand";
+type ProjectNames = "goNoodleAgain";
 
 export default function App() {
   const [projectName, setProjectName] = useState<ProjectNames | null>(null);
@@ -76,7 +76,7 @@ export default function App() {
     <div className="flex bg-repeat dot-bg overflow-hidden">
       {/* Left Nav */}
       <div className="hidden sm:block sm:w-20 md:w-24 bg-coral"></div>
-      <div className={`z-50 fixed w-full sm:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 transition-colors transform duration-500 ease-in-out ${showCloseAction ? "border-gray bg-gray-light" : "border-gray bg-gray-light"}`}>
+      <div className={`z-50 fixed w-full sm:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-0 transition-colors transform duration-500 ease-in-out ${showCloseAction ? "border-gray bg-gray-light" : "border-gray bg-gray-light"}`}>
       {/* <div className="z-10 fixed w-full sm:w-20 md:w-24 flex sm:flex-col items-center justify-between h-20 sm:h-screen p-sm sm:border-r-2 border-aqua bg-aqua-light"> */}
         <div id="logo" className="flex flex-row sm:flex-col">
           <div className="">
@@ -107,7 +107,7 @@ export default function App() {
         
         {/* <a className="tiny-button font-tiny text-center py-xs" href="mailto:howard.adamp@gmail.com?subject=Hi, Adam!">Contact</a> */}
         <div className="w-1/12 sm:w-full mb-sm">
-          <IconButton text="Contact" email="howard.adamp@gmail.com?subject=Hi, Adam!"/>
+          <IconButton text="Email Adam" email="howard.adamp@gmail.com?subject=Hi, Adam!"/>
         </div>
       </div>
       {/* Page Container */}
@@ -115,45 +115,59 @@ export default function App() {
         <div className="relative flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:px-2xl lg:py-xl lg:pt-lg mt-md md:mt-0 text-center">
           <img className="absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} alt="sketched circle"/>
           <ChatBubble direction="right">
-          Hello! I'm a designer who loves making products that balance user needs with business value. Thanks for coming to see my portfolio. Let's get to it! 
+          Hello! I'm a designer who loves creating products that balance user needs with business outcomes. My experience has made me comfortable jumping into new things, seeking the right information, and navigating ambiguity in search of the best solution.
           </ChatBubble>
           <img className="absolute left-1/3 -bottom-6 w-6 md:w-10" src={sketchArrow} alt="sketched arrow"/>
         </div>
-        {/* <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
+        <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
           <p className="font-speech lg:px-md">
-          Understanding people is essential to creating well-designed products. To inform design choices, I use whatever research technique helps me develop empathy.
+          "Creativity is not a talent, it is a way of operating."
           </p>
           <p className="font-tiny-buddy mt-sm lg:px-md">
-          (I listen more than I talk and my curiosity leads to good questions)
+          - John Cleese
           </p> 
-        </div> */}
-        {/* <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-md text-center">
-          <SpotCollabLofi className="w-full mb-md px-sm" />
-          <p className="font-speech lg:px-md">
-          Collaboration is critical. I want people to be included in the design process. I'm comfortable with facilitation and working in ambiguity as part of a team. 
+        </div>
+        {/* <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-md text-left">
+          <p className="font-speech">
+          I'm fascinated by the creative process - how ideas become reality. I'm also fully aware that I'm not making products for myself and my own artistic expression. We have to find the balance between what the business needs and what the users want. Thats what makes product work so exciting and what gets me out of bed. 
           </p>
-          <p className="font-tiny-buddy mt-sm lg:px-md">
-          (I welcome different perspectives and strive for an ego-free attitude.)
-          </p> 
-          <SpotCollabHifi className="w-full mt-md" />
         </div> */}
 
-        {/* <div className="relative flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
-          <h2 className="font-big-buddy mb-sm">Design Systems</h2>
-          <p className="font-speech lg:px-md">
-          The solutions I help create balance the technical and business needs, while always advocating for the user. I work with engineers to make sure design systems are well implemented, documented and maintained.  
-          </p>
-          <p className="font-tiny-buddy mt-sm lg:px-md">
-          (FWIW, Some of the best people I've met are engineers)
-          </p>
-          <DesignSystem className="w-full md:mt-lg" />
-          <img className="absolute right-0 -bottom-16 w-32 md:w-60" src={sketchShow} alt="sketched arrow"/>
-        </div> */}
-        {/* <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
-          <ChatBubble className="mb-lg" frames={adamHeads2}>Take a look at some of my work!</ChatBubble>
-        </div> */}
+        <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
+          <ChatBubble className="mb-lg" frames={adamHeads3}>I'm fascinated by the creative process - how ideas become reality. I'm also fully aware that I'm not making products for myself and my own artistic expression. We have to find the balance between what the business needs and what the users want. Thats what makes product work so exciting and what gets me out of bed.</ChatBubble>
+        </div>
+        
+        <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
+          <ChatBubble direction="right" className="mb-lg" frames={adamHeads3}>My work samples are below. They represent what I've done, but I believe my best work is still ahead of me. So go ahead, click one!</ChatBubble>
+        </div>
+
+        <div className="relative flex flex-col p-lg text-center">
+          <a href="#" className=""><h2 className="font-big-buddy mb-sm text-royal">Better Provider Workflows in Stressful Environments</h2></a>
+          <div className="flex items-center space-x-sm justify-center">
+            <p className="font-skills text-black mb-sm">Industry: Healthcare</p>
+            <p className="font-skills text-black mb-sm">Skills: UX/UI Design, Research</p>
+          </div>
+        </div>
+        <div className="relative flex flex-col p-lg text-center">
+          <a href="#" className=""><h2 className="font-big-buddy mb-sm text-royal">Enhancing Features During a Migration</h2></a>
+          <div className="flex items-center space-x-sm justify-center">
+            <p className="font-skills text-black mb-sm">Industry: EdTech</p>
+            <p className="font-skills text-black mb-sm">Skills: Discovery, UX/UI Design, Research</p>
+          </div>
+        </div>
+        <div className="relative flex flex-col p-lg text-center">
+          <a href="#" className=""><h2 className="font-big-buddy mb-sm text-royal">Improving Patient Care for Retail Pharmacy</h2></a>
+          <div className="flex items-center space-x-sm justify-center">
+            <p className="font-skills text-black mb-sm">Industry: Healthcare</p>
+            <p className="font-skills text-black mb-sm">Skills: Facilitation, Discovery</p>
+          </div>
+        </div>
+
+        <DesignSystem className="w-full md:mt-lg" />
+
+
         {/* <iframe style={{"border": "1px solid rgba(0, 0, 0, 0.1);"}} width="100%" height="750" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCdTDvUhRE0QYEQ0oWBSa5K%2FBank-of-Dad%3Fnode-id%3D268%253A624"></iframe> */}
-        <div className="grid grid-flow-row grid-cols-3 grid-rows-1 gap-sm p-sm text-center pt-lg">
+        <div className="grid grid-flow-row grid-cols-3 grid-rows-1 gap-sm p-sm text-center">
           {/* <img
             style={{ cursor: "pointer", filter: "saturate(0)" }}
             src={Bball1}
@@ -169,55 +183,38 @@ export default function App() {
             onClick={() => setProjectName("goNoodle")}
             alt="Design System for GoNoodle"
           /> */}
-
-          <img
+          {/* <img
             style={{ cursor: "pointer"}}
             src={GnT}
             className="transition duration-700 ease-in-out transform scale-95 hover:scale-100 sm:p-sm"
             onClick={() => setProjectName("goNoodleAgain")}
             alt="Understanding Classroom Moments"
-          />
-          <img
-            style={{ cursor: "pointer"}}
-            src={SignalT}
-            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100 sm:p-sm"
-            onClick={() => setProjectName("miscApps")}
-            alt="Quantity and Quality?"
-          />
-          <img
-            style={{ cursor: "pointer"}}
-            src={OmniT}
-            className="transition duration-700 ease-in-out transform scale-95 hover:scale-100 sm:p-sm"
-            onClick={() => setProjectName("omniStrand")}
-            alt="Can you teach a kid to grow their money?"
-          />
+          /> */}
           
         </div>
         {/* <div className="relative p-md py-lg sm:p-lg md:p-lg lg:p-2xl">
-          <ChatBubble className="mb-3xl">
-            Right now, I’m looking to help a team make great products for kids
-            and families. I am helping raise two kids and I care deeply about
-            the challenges and opportunities to use technology to improve their
-            lives. So if..
-          </ChatBubble>
-          <img className="absolute -left-32 top-0 w-2/12" src={shapeStack2} />
-          <ChatBubble className="mb-3xl sm:w-3/4" direction="right">
-            Dad, Can I have a 50 hundred dollars?
-          </ChatBubble>
-          <ChatBubble frames={adamHeads3} className="mb-3xl">
-            I'm in the middle of talking with this nice person. Be patient and
-            we'll talk about it soon.
-          </ChatBubble>
-        </div> */}
-        <div className="relative p-md py-lg sm:p-lg md:p-lg lg:p-2xl">
-          {/* <img className="absolute -right-52 top-0 w-2/12" src={shapeStack3} /> */}
           <ChatBubble frames={adamHeads3} className="mb-lg">
-          Hey! Please contact me if you have any opportunities. Thanks again for scrolling all the way down here!   
+          Hey! Thanks again for scrolling all the way down here!   
           </ChatBubble>
           <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-sm mb-xl">
             <img className="absolute object-center w-full md:w-1/2 transform" src={sketchCTA} alt="Sketched Circle"/>
-            <Button email="howard.adamp@gmail.com?subject=Hi, Adam!" className="mt-2xl z-10" text="Contact Me" />
+            <Button email="howard.adamp@gmail.com?subject=Hi, Adam!" className="mt-2xl z-10" text="Get in Touch w/ Adam" />
           </div>
+        </div> */}
+        <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-xl text-center">
+          {/* <SpotCollabLofi className="w-full mb-md px-sm" /> */}
+          <p className="font-medium-buddy">
+            Hiring is really easy!
+          </p>
+          <p className="font-speech mt-sm lg:px-md">
+            Adam is perfect in every way and has never made a mistake. He has no weaknesses and has the exact balance of skills you are looking for to fill your very broad and possibly unrealistic job description!
+          </p> 
+          <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-sm mb-xl">
+            <img className="absolute object-center w-full md:w-1/2 transform" src={sketchCTA} alt="Sketched Circle"/>
+            <Button email="howard.adamp@gmail.com?subject=Hi, Adam!" className="mt-2xl z-10" text="Email Adam" />
+            <a className="block z-10 items-center px-md py-sm font-btn rounded transform transition hover:scale-105 text-white hover:text-white bg-royal hover:bg-royal focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-royal-light" href="https://calendly.com/adam_howard/meet-adam">Schedule a Meeting</a>
+          </div>
+          {/* <DesignInterfaceTop className="w-full mt-md" /> */}
         </div>
         <div className="relative">
           {/* <img className="ml-auto" src={shapeStackBottom} alt="stack of shapes along the bottom of page"/> */}
@@ -230,7 +227,6 @@ export default function App() {
         description={project?.description}
         images={project?.images}
         background={project?.background}
-        caption={project?.caption}
         onClose={closeProject}
         url={project?.url}
       />
@@ -242,64 +238,53 @@ interface TProject {
   title: string;
   description: string;
   images: string[];
-  caption: string;
   background: string;
   url?: string;
 }
 type Projects = { [key in ProjectNames]: TProject };
 var projects: Projects = {
-  headGame: {
-    title: "Sports + Mindfulness for Young Athletes",
-    description:
-      "These are some mixed-fidelity prototypes for a service that combines mindfulness training with basketball. These were inspired by interviews with Hall of Famer Bill Walton. His journey and approach to mindfulness inspired the Empathy stage of Design Thinking. I spent a few cycles generating ideas and protoyping.",
-    images: [Bball1, Bball2],
-    background: BankBg,
-    caption: "Ideation, Mixed-Fidelity Prototypes, In Progress",
-    url: "http://www.google.com",
-  },
-  homeBank: {
-    title: "Can you teach a kid to grow their money?",
-    description:
-      "As a parent, I want my child to view money as a practical tool for improving their lives. To that end, I wanted to explore a product that borrows from traditional chore/reward model while helping parents teach their children how to grow their money over time and give back.",
-    images: [BankL],
-    background: "",
-    caption: "Ideation, Hi-Fidelity Prototypes, Work-In-Progress",
-    url: "https://glimmer-glitter-2bd.notion.site/Rags-to-Riches-cf77cbcdf22946a8bd5f36a7cacf27ba",
-  },
-  miscApps: {
-    title: "Zero to One",
-    description:
-      "I have deep experience designing 0 to 1 applications for Startups and Large Companies. As the lead UX Designer at an agency for over 10 years, I developed my ability to ask the right questions to understand context and to work well with everyone from users, to stakeholders, to engineers.",
-    images: [Signal3, Signal0, Signal2, Signal1],
-    background: "",
-    caption: "Discovery, Prototyping, UI Design, UX Design, User Testing",
-    url: "https://glimmer-glitter-2bd.notion.site/Quantity-and-quality-76acb68d11ec4f47bcce3d93b52ec935",
-  },
+  // headGame: {
+  //   title: "Sports + Mindfulness for Young Athletes",
+  //   description:
+  //     "These are some mixed-fidelity prototypes for a service that combines mindfulness training with basketball. These were inspired by interviews with Hall of Famer Bill Walton. His journey and approach to mindfulness inspired the Empathy stage of Design Thinking. I spent a few cycles generating ideas and protoyping.",
+  //   images: [Bball1, Bball2],
+  //   background: BankBg,
+  //   caption: "Ideation, Mixed-Fidelity Prototypes, In Progress",
+  //   url: "http://www.google.com",
+  // },
+  // homeBank: {
+  //   title: "Can you teach a kid to grow their money?",
+  //   description:
+  //     "As a parent, I want my child to view money as a practical tool for improving their lives. To that end, I wanted to explore a product that borrows from traditional chore/reward model while helping parents teach their children how to grow their money over time and give back.",
+  //   images: [BankL],
+  //   background: "",
+  //   caption: "Ideation, Hi-Fidelity Prototypes, Work-In-Progress",
+  //   url: "https://glimmer-glitter-2bd.notion.site/Rags-to-Riches-cf77cbcdf22946a8bd5f36a7cacf27ba",
+  // },
+  // miscApps: {
+  //   title: "Zero to One",
+  //   description:
+  //     "I have deep experience designing 0 to 1 applications for Startups and Large Companies. As the lead UX Designer at an agency for over 10 years, I developed my ability to ask the right questions to understand context and to work well with everyone from users, to stakeholders, to engineers.",
+  //   images: [Signal3, Signal0, Signal2, Signal1],
+  //   background: "",
+  //   caption: "Discovery, Prototyping, UI Design, UX Design, User Testing",
+  //   url: "https://glimmer-glitter-2bd.notion.site/Quantity-and-quality-76acb68d11ec4f47bcce3d93b52ec935",
+  // },
   goNoodleAgain: {
-    title: "Understanding Classroom Moments",
+    title: "Enhancing Features during a Migration",
     description:
-      "Teachers are essential to GoNoodle. They are part of a community that is eager to promote and share. While working with the Head of Design and the Support team, we put together surveys and interviews - hoping we could uncover some opportunities to add more value. ",
+      "Consumer brand in the School space. ",
     images: [Gn2_2],
     background: "",
-    caption: "Research, Ideation, Testing",
     url: "https://glimmer-glitter-2bd.notion.site/Improving-a-much-loved-feature-ebf55c7869ae49daad93063e92b338a4",
   },
-  goNoodle: {
-    title: "GoNoodle.com Redesign",
-    description:
-      "I worked with Product Design and Engineering to launch a new product and updated design system. I worked in and maintained the Figma library, and contributed to the React codebase using Tailwind and Storybook",
-    images: [Gn0, Gn2],
-    background: "",
-    caption: "Design System Contribution and Documentation, Interface Design, CSS Implementation",
-    url: "https://glimmer-glitter-2bd.notion.site/GoNoodle-2dea30ccaa5347209cb9a876b212449a",
-  },
-  omniStrand: {
-    title: "Closing the Care Gap",
-    description:
-      "Design is never done and opportunities for improvement are everywhere! We worked with users and internal stakeholders to decide what goes on the roadmap and how we improve the product over time.",
-    images: [Omni1],
-    background: "",
-    caption: "Research, Discovery, Rapid Prototyping",
-    url: "https://glimmer-glitter-2bd.notion.site/Beyond-MVP-a8ced803893342e599e9e5b60e5e854f",
-  }
+  // goNoodle: {
+  //   title: "GoNoodle.com Redesign",
+  //   description:
+  //     "I worked with Product Design and Engineering to launch a new product and updated design system. I worked in and maintained the Figma library, and contributed to the React codebase using Tailwind and Storybook",
+  //   images: [Gn0, Gn2],
+  //   background: "",
+  //   caption: "Design System Contribution and Documentation, Interface Design, CSS Implementation",
+  //   url: "https://glimmer-glitter-2bd.notion.site/GoNoodle-2dea30ccaa5347209cb9a876b212449a",
+  // },
 };

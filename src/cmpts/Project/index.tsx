@@ -8,13 +8,12 @@ interface Props {
   description: string;
   images: string[];
   background: string;
-  caption: string;
   onClose: () => void;
   url?: string;
 }
 
 export function Project(props: Props) {
-  const { title = "", description, caption, images = [], onClose, background, url } = props;
+  const { title = "", description, images = [], onClose, background, url } = props;
   const show = !!title;
 
   return (
@@ -30,7 +29,6 @@ export function Project(props: Props) {
     >
       <div className={`text-center ${show ? "p-md md:p-lg" : ""}`}>
         <h2 className="font-medium-buddy mb-sm">{title}</h2>
-        <p className="font-skills text-royal mb-sm">{caption}</p>
         <p className="font-base mb-sm">{description}</p>
         { url && <a href={url} className="tiny-button" target="_blank" style={{"marginTop": "50px"}}>Read Full Case Study</a>}
       </div>
