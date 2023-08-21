@@ -149,7 +149,7 @@ export default function App() {
           </div>
         </div>
         <div className="relative flex flex-col p-lg text-center">
-          <a href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-16806&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className=""><h2 className="font-big-buddy mb-sm text-royal">Enhancing Features During a Migration</h2></a>
+          <a href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-16806&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className=""><h2 className="font-big-buddy mb-sm text-royal">Enhancing Features During a Platform Migration</h2></a>
           <div className="flex items-center space-x-sm justify-center">
             <p className="font-skills text-black mb-sm">Industry: Education</p>
             <p className="font-skills text-black mb-sm">Skills: Discovery, UX/UI Design, Research</p>
@@ -204,7 +204,7 @@ export default function App() {
         <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-xl text-center">
           {/* <SpotCollabLofi className="w-full mb-md px-sm" /> */}
           <p className="font-medium-buddy">
-            Hiring is really easy!
+            Hiring is really easy.
           </p>
           <p className="font-speech mt-sm lg:px-md">
             Adam is perfect in every way and has never made a mistake. He has no weaknesses and has the exact balance of skills you are looking for to fill your very broad and possibly unrealistic job description!
