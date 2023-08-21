@@ -142,21 +142,21 @@ export default function App() {
         </div>
 
         <div className="relative flex flex-col p-lg text-center">
-          <a href="#" className=""><h2 className="font-big-buddy mb-sm text-royal">Better Provider Workflows in Stressful Environments</h2></a>
+          <a href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-17017&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className=""><h2 className="font-big-buddy mb-sm text-royal">Better Provider Workflows in Stressful Environments</h2></a>
           <div className="flex items-center space-x-sm justify-center">
             <p className="font-skills text-black mb-sm">Industry: Healthcare</p>
             <p className="font-skills text-black mb-sm">Skills: UX/UI Design, Research</p>
           </div>
         </div>
         <div className="relative flex flex-col p-lg text-center">
-          <a href="#" className=""><h2 className="font-big-buddy mb-sm text-royal">Enhancing Features During a Migration</h2></a>
+          <a href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-16806&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className=""><h2 className="font-big-buddy mb-sm text-royal">Enhancing Features During a Migration</h2></a>
           <div className="flex items-center space-x-sm justify-center">
-            <p className="font-skills text-black mb-sm">Industry: EdTech</p>
+            <p className="font-skills text-black mb-sm">Industry: Education</p>
             <p className="font-skills text-black mb-sm">Skills: Discovery, UX/UI Design, Research</p>
           </div>
         </div>
         <div className="relative flex flex-col p-lg text-center">
-          <a href="#" className=""><h2 className="font-big-buddy mb-sm text-royal">Improving Patient Care for Retail Pharmacy</h2></a>
+          <a href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-16790&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className=""><h2 className="font-big-buddy mb-sm text-royal">Improving Patient Care for Retail Pharmacy</h2></a>
           <div className="flex items-center space-x-sm justify-center">
             <p className="font-skills text-black mb-sm">Industry: Healthcare</p>
             <p className="font-skills text-black mb-sm">Skills: Facilitation, Discovery</p>
