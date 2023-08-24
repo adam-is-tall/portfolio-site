@@ -207,7 +207,7 @@ export default function App() {
             Hiring is really easy.
           </p>
           <p className="font-speech mt-sm lg:px-md">
-            Adam is perfect in every way and has never made a mistake. He has no weaknesses and has the exact balance of skills you are looking for to fill your very broad and possibly unrealistic job description!
+            Adam is perfect in every way and has never made a mistake. He has no weaknesses and has the exact balance of skills you are looking for to fit your (possibly unrealistic) job description!
           </p> 
           <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-sm mb-xl">
             <img className="absolute object-center w-full md:w-1/2 transform" src={sketchCTA} alt="Sketched Circle"/>
