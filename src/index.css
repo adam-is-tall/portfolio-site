@@ -89,6 +89,10 @@ html {
   font-size: 18px;
 }
 
+.font-quote {
+  font-weight: 500;
+}
+
 .font-btn {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;

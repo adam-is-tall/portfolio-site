@@ -115,12 +115,12 @@ export default function App() {
         <div className="relative flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:px-2xl lg:py-xl lg:pt-lg mt-md md:mt-0 text-center">
           <img className="absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} alt="sketched circle"/>
           <ChatBubble direction="right">
-          Hello! I'm a designer who loves creating products that balance user needs with business outcomes. My experience has made me comfortable jumping into new things, seeking the right information, and navigating ambiguity in search of the best solution.
+          Hello! I'm a product designer with over a decade of experience designing digital products. I want to contribute to a high-performing team that shares my passion for creating meaningful products.
           </ChatBubble>
           <img className="absolute left-1/3 -bottom-6 w-6 md:w-10" src={sketchArrow} alt="sketched arrow"/>
         </div>
         <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
-          <p className="font-speech lg:px-md">
+          <p className="font-speech font-quote lg:px-md">
           "Creativity is not a talent, it is a way of operating."
           </p>
           <p className="font-tiny-buddy mt-sm lg:px-md">
@@ -134,15 +134,16 @@ export default function App() {
         </div> */}
 
         <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
-          <ChatBubble className="mb-lg" frames={adamHeads3}>I'm fascinated by the creative process - how ideas become reality. I'm also fully aware that I'm not making products for myself and my own artistic expression. We have to find the balance between what the business needs and what the users want. Thats what makes product work so exciting and what gets me out of bed.</ChatBubble>
+          <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process - turning ideas into reality. I'm fully aware that I'm not making products for my own artistic expression. I work to find the balance between what the business needs and what the users want.</ChatBubble>
         </div>
         
-        <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
-          <ChatBubble direction="right" className="mb-lg" frames={adamHeads3}>My work samples are below. They represent what I've done, but I believe my best work is still ahead of me. So go ahead, click one!</ChatBubble>
+        <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center relative">
+          <ChatBubble direction="right" className="mb-lg" frames={adamHeads3}>These work samples represent a few projects I've done, but I believe my best work is always ahead of me.</ChatBubble>
+          <img className="absolute left-1/2 -bottom-6 w-6 md:w-10" src={sketchArrow} alt="sketched arrow"/>
         </div>
 
         <div className="relative flex flex-col p-lg text-center">
-          <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-17017&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className=""><h2 className="font-big-buddy mb-sm text-royal">Enhanced Flows for Provider Pros</h2></a>
+          <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-17017&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className=""><h2 className="font-big-buddy mb-sm text-royal">Enhanced Flows for Provider&nbsp;Pros</h2></a>
           <div className="flex items-center space-x-sm justify-center">
             <p className="font-skills text-black mb-sm">Industry: Healthcare</p>
             <p className="font-skills text-black mb-sm">Skills: UX/UI Design, Research</p>
@@ -203,12 +204,12 @@ export default function App() {
         </div> */}
         <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-xl text-center">
           {/* <SpotCollabLofi className="w-full mb-md px-sm" /> */}
-          <p className="font-medium-buddy">
-            Hiring is really easy.
+          {/* <p className="font-medium-buddy">
+            Hiring is not easy.
           </p>
           <p className="font-speech mt-sm lg:px-md">
-            Adam is perfect in every way and has never made a mistake. He has no weaknesses and has the exact balance of skills you are looking for to fit your (possibly unrealistic) job description!
-          </p> 
+            I try to approach interviews the same way I approach design.<br/>If I do my part, it should be an easy hiring decision either way. <br/>Thank you for your time!
+          </p>  */}
           <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-sm mb-xl">
             <img className="absolute object-center w-full md:w-1/2 transform" src={sketchCTA} alt="Sketched Circle"/>
             <Button email="howard.adamp@gmail.com?subject=Hi, Adam!" className="mt-2xl z-10" text="Email Adam" />
