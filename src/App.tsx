@@ -134,13 +134,14 @@ export default function App() {
         </div> */}
 
         <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
-          <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process - turning ideas into reality. I'm fully aware that I'm not making products for my own artistic expression. I work to find the balance between what the business wants and what the users need.</ChatBubble>
+          {/* <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process - turning ideas into reality. I'm fully aware that I'm not making products for my own artistic expression. I work to find the balance between what the business wants and what the users need.</ChatBubble> */}
+          <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process. It takes creativity to find the balance between what the business wants and what the users need. These work samples represent some of my favorite projects.</ChatBubble>
         </div>
         
-        <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center relative">
+        {/* <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center relative">
           <ChatBubble direction="right" className="mb-lg" frames={adamHeads3}>These work samples represent a few projects I've done, but I believe my best work is always ahead of me.</ChatBubble>
           <img className="absolute left-1/2 -bottom-6 w-6 md:w-10" src={sketchArrow} alt="sketched arrow"/>
-        </div>
+        </div> */}
 
         <div className="relative flex flex-col p-lg text-center">
           <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-17017&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className=""><h2 className="font-big-buddy mb-sm text-royal">Enhanced Flows for Provider&nbsp;Pros</h2></a>
