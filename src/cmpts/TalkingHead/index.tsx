@@ -4,9 +4,12 @@ import ah2 from "../../assets/img/heads/open-ah-2.png";
 import oh1 from "../../assets/img/heads/open-oh-1.png";
 import oh2 from "../../assets/img/heads/open-oh-2.png";
 import r from "../../assets/img/heads/open-r.png";
+import rest from "../../assets/img/heads/new/head-rest.png";
+import ah from "../../assets/img/heads/new/head-ah.png";
 
 const frameChangeInterval = 0.5; // seconds
-const headFrames = [ah1, ah2, oh2];
+const headFrames = [rest, ah];
+
 interface Props {
   className?: string;
   style?: CSSProperties;

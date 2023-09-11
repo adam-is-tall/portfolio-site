@@ -56,9 +56,19 @@ import rs from "./assets/img/heads/open-r-stache.png";
 import closed from "./assets/img/heads/closed-2.png";
 import distracted from "./assets/img/heads/distracted.png";
 
-const adamHeads1 = [ah1, ah2, oh1, r];
-const adamHeads2 = [oh1 , ah2, ah1];
-const adamHeads3 = [r, oh2, ah2, ah1];
+import rest from "./assets/img/heads/new/head-rest.png";
+import ah from "./assets/img/heads/new/head-ah.png";
+import w from "./assets/img/heads/new/head-w.png";
+import sh from "./assets/img/heads/new/head-sh.png";
+import o from "./assets/img/heads/new/head-o.png";
+import mm from "./assets/img/heads/new/head-mm.png";
+import eh from "./assets/img/heads/new/head-eh.png";
+import ff from "./assets/img/heads/new/head-ff.png";
+import smile from "./assets/img/heads/new/head-smile.png";
+
+const adamHeads4 = [r, oh2, ah2, ah1];
+const adamHeads1 = [rest, w, ah, ff, mm];
+const adamHeads2 = [sh, o, w, eh, rest, smile];
 
 type ProjectNames = "goNoodleAgain";
 
@@ -88,6 +98,7 @@ export default function App() {
                 transitionProperty: "all",
                 transitionDuration: "500ms",
                 transitionTimingFunction: "ease-out",
+                display: "none",
               }}
               className="w-16 sm:w-full sm:h-20 mr-sm sm:ml-0 px-sm self-center"
               onClick={closeProject} width="55" height="48" viewBox="0 0 55 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,20 +117,20 @@ export default function App() {
         </div>
         
         {/* <a className="tiny-button font-tiny text-center py-xs" href="mailto:howard.adamp@gmail.com?subject=Hi, Adam!">Contact</a> */}
-        <div className="w-1/12 sm:w-full mb-sm">
+        <div className="w-1/8 sm:w-full my-sm">
           <IconButton text="Email Adam" email="howard.adamp@gmail.com?subject=Hi, Adam!"/>
         </div>
       </div>
       {/* Page Container */}
       <div className={`container relative mx-auto transition delay-500 ${showCloseAction ? "opacity-0" : "opacity-100"}`}>
         <div className="relative flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:px-2xl lg:py-xl lg:pt-lg mt-md md:mt-0 text-center">
-          <img className="absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} alt="sketched circle"/>
-          <ChatBubble direction="right">
+          <img className="hidden sm:block absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} alt="sketched circle"/>
+          <ChatBubble direction="right" frames={adamHeads1}>
           Hello! I'm a product designer with over a decade of experience designing digital products. I want to contribute to a high-performing team that shares my passion for creating meaningful products.
           </ChatBubble>
-          <img className="absolute left-1/3 -bottom-6 w-6 md:w-10" src={sketchArrow} alt="sketched arrow"/>
+          <img className="hidden sm:block absolute left-1/3 -bottom-6 w-6 md:w-10" src={sketchArrow} alt="sketched arrow"/>
         </div>
-        <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
+        <div className="flex flex-col items-center p-lg sm:py-lg sm:p-md md:p-lg lg:p-2xl text-center">
           <p className="font-speech font-quote lg:px-md">
           "Creativity is not a talent, it is a way of operating."
           </p>
@@ -135,7 +146,7 @@ export default function App() {
 
         <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
           {/* <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process - turning ideas into reality. I'm fully aware that I'm not making products for my own artistic expression. I work to find the balance between what the business wants and what the users need.</ChatBubble> */}
-          <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process. It takes creativity to find the balance between what the business wants and what the users need. These work samples represent some of my favorite projects.</ChatBubble>
+          <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process. It takes creativity to find the balance between what the business wants and what people need. These work samples represent some of my favorite projects.</ChatBubble>
         </div>
         
         {/* <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center relative">
@@ -143,23 +154,23 @@ export default function App() {
           <img className="absolute left-1/2 -bottom-6 w-6 md:w-10" src={sketchArrow} alt="sketched arrow"/>
         </div> */}
 
-        <div className="relative flex flex-col p-lg text-center">
+        <div className="relative flex flex-col p-md sm:p-lg text-center m-sm border-2 sm:border-0 border-gray rounded-md">
           <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-17017&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className=""><h2 className="font-big-buddy mb-sm text-royal">Enhanced Flows for Provider&nbsp;Pros</h2></a>
-          <div className="flex items-center space-x-sm justify-center">
+          <div className="flex flex-col sm:flex-row items-center space-x-sm justify-center">
             <p className="font-skills text-black mb-sm">Industry: Healthcare</p>
             <p className="font-skills text-black mb-sm">Skills: UX/UI Design, Research</p>
           </div>
         </div>
-        <div className="relative flex flex-col p-lg text-center">
+        <div className="relative flex flex-col p-md sm:p-lg text-center m-sm border-2 sm:border-0 border-gray rounded-md">
           <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-16806&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className=""><h2 className="font-big-buddy mb-sm text-royal">Designing Features for Kids and Teachers</h2></a>
-          <div className="flex items-center space-x-sm justify-center">
+          <div className="flex flex-col sm:flex-row items-center space-x-sm justify-center">
             <p className="font-skills text-black mb-sm">Industry: Education</p>
             <p className="font-skills text-black mb-sm">Skills: Discovery, UX/UI Design, Research</p>
           </div>
         </div>
-        <div className="relative flex flex-col p-lg text-center">
+        <div className="relative flex flex-col p-md sm:p-lg text-center m-sm border-2 sm:border-0 border-gray rounded-md">
           <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-16790&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className=""><h2 className="font-big-buddy mb-sm text-royal">Improving Patient Care for Retail Pharmacy</h2></a>
-          <div className="flex items-center space-x-sm justify-center">
+          <div className="flex flex-col sm:flex-row items-center space-x-sm justify-center">
             <p className="font-skills text-black mb-sm">Industry: Healthcare</p>
             <p className="font-skills text-black mb-sm">Skills: Facilitation, Discovery</p>
           </div>
@@ -211,8 +222,8 @@ export default function App() {
           <p className="font-speech mt-sm lg:px-md">
             I try to approach interviews the same way I approach design.<br/>If I do my part, it should be an easy hiring decision either way. <br/>Thank you for your time!
           </p>  */}
-          <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm pt-xl mt-sm mb-xl">
-            <img className="absolute object-center w-full md:w-1/2 transform" src={sketchCTA} alt="Sketched Circle"/>
+          <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm sm:pt-xl mt-sm mb-xl">
+            <img className="hidden sm:block absolute object-center w-full md:w-1/2 transform" src={sketchCTA} alt="Sketched Circle"/>
             <Button email="howard.adamp@gmail.com?subject=Hi, Adam!" className="mt-2xl z-10" text="Email Adam" />
             <a className="block z-10 items-center px-md py-sm font-btn rounded transform transition hover:scale-105 text-white hover:text-white bg-royal hover:bg-royal focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-royal-light" href="https://calendly.com/adam_howard/meet-adam">Schedule a Meeting</a>
           </div>
