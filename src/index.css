@@ -50,11 +50,11 @@ html {
 }
 
 .font-medium-buddy {
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 900;
+  font-family: "jubilat", "proxima-nova", sans-serif;
+  font-weight: 400;
   font-style: normal;
   line-height: 120%;
-  font-size: 40px;
+  font-size: 26px;
 }
 
 .font-little-buddy {
@@ -129,6 +129,9 @@ html {
   .font-big-buddy {
     font-size: 48px;
   }
+  .font-medium-buddy {
+    font-size: 20px;
+  }
   .font-base {
     font-size: 16px;
   }
@@ -140,6 +143,9 @@ html {
 @media screen and (min-width: 1024px) {
   .font-big-buddy {
     font-size: 80px;
+  }
+  .font-medium-buddy {
+    font-size: 40px;
   }
   .font-base {
     font-size: 18px;

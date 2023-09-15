@@ -7,7 +7,9 @@ import { ReactComponent as DesignInterfaceBottom } from "./assets/img/design-int
 import { ReactComponent as DesignPlanning } from "./assets/img/design-planning.svg";
 import { ReactComponent as SpotCollabLofi } from "./assets/img/collab-lofi.svg";
 import { ReactComponent as SpotCollabHifi } from "./assets/img/collab-hifi.svg";
-import Bball2 from "./assets/img/p-mindfullness-1.jpg";
+import Omni from "./assets/img/p-thumbs/Omni.jpg";
+import GoNoodle from "./assets/img/p-thumbs/GoNoodle.jpg";
+import StrandRx from "./assets/img/p-thumbs/StrandRx.png";
 import Bball1 from "./assets/img/p-mindfullness.jpg";
 import Portfolio3 from "./assets/img/p-mya.jpg";
 import Portfolio4 from "./assets/img/p-bod-2.png";
@@ -154,23 +156,47 @@ export default function App() {
           <img className="absolute left-1/2 -bottom-6 w-6 md:w-10" src={sketchArrow} alt="sketched arrow"/>
         </div> */}
 
-        <div className="relative flex flex-col p-md sm:p-lg text-center m-sm border-2 sm:border-0 border-gray rounded-md">
-          <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-17017&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className=""><h2 className="font-big-buddy mb-sm text-royal">Enhanced Flows for Provider&nbsp;Pros</h2></a>
-          <div className="flex flex-col sm:flex-row items-center space-x-sm justify-center">
+        <div className="relative flex flex-col p-md sm:p-lg text-center m-sm rounded-md">
+          <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-17017&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className="">
+            <h2 className="font-medium-buddy mb-sm text-royal">Enhanced Flows for Provider&nbsp;Pros</h2>
+            <img
+            style={{ cursor: "pointer", margin: "auto" }}
+            src={Omni}
+            className="transition duration-700 ease-in-out transform w-full md:w-2/3 hover:scale-105"
+            alt="Low fidelity prototype of pharmacy communicating with patient"
+          />
+          </a>
+          <div className="flex flex-col md:flex-row items-center space-x-sm mt-sm justify-center">
             <p className="font-skills text-black mb-sm">Industry: Healthcare</p>
             <p className="font-skills text-black mb-sm">Skills: UX/UI Design, Research</p>
           </div>
         </div>
-        <div className="relative flex flex-col p-md sm:p-lg text-center m-sm border-2 sm:border-0 border-gray rounded-md">
-          <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-16806&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className=""><h2 className="font-big-buddy mb-sm text-royal">Designing Features for Kids and Teachers</h2></a>
-          <div className="flex flex-col sm:flex-row items-center space-x-sm justify-center">
+        <div className="relative flex flex-col p-md sm:p-lg text-center m-sm rounded-md">
+          <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-17017&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className="">
+            <h2 className="font-medium-buddy mb-sm text-royal">Designing Features for Kids and Teachers</h2>
+            <img
+            style={{ cursor: "pointer", margin: "auto" }}
+            src={GoNoodle}
+            className="transition duration-700 ease-in-out transform w-full md:w-2/3 hover:scale-105"
+            alt="Image of a screen where teachers can select their champs"
+          />
+          </a>
+          <div className="flex flex-col md:flex-row items-center space-x-sm mt-sm justify-center">
             <p className="font-skills text-black mb-sm">Industry: Education</p>
             <p className="font-skills text-black mb-sm">Skills: Discovery, UX/UI Design, Research</p>
           </div>
         </div>
-        <div className="relative flex flex-col p-md sm:p-lg text-center m-sm border-2 sm:border-0 border-gray rounded-md">
-          <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-16790&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className=""><h2 className="font-big-buddy mb-sm text-royal">Improving Patient Care for Retail Pharmacy</h2></a>
-          <div className="flex flex-col sm:flex-row items-center space-x-sm justify-center">
+        <div className="relative flex flex-col p-md sm:p-lg text-center m-sm rounded-md">
+          <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-17017&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className="">
+            <h2 className="font-medium-buddy mb-sm text-royal">Improving Patient Care for Retail Pharmacy</h2>
+            <img
+            style={{ cursor: "pointer", margin: "auto" }}
+            src={StrandRx}
+            className="transition duration-700 ease-in-out transform w-full md:w-2/3 hover:scale-105"
+            alt="Image of an EHR Application Design"
+          />
+          </a>
+          <div className="flex flex-col md:flex-row items-center space-x-sm mt-sm justify-center">
             <p className="font-skills text-black mb-sm">Industry: Healthcare</p>
             <p className="font-skills text-black mb-sm">Skills: Facilitation, Discovery</p>
           </div>
