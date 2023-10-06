@@ -161,7 +161,7 @@ export default function App() {
             <h2 className="font-medium-buddy mb-sm text-royal">Enhanced Flows for Provider&nbsp;Pros</h2>
             <img
             style={{ cursor: "pointer", margin: "auto" }}
-            src={Omni}
+            src={StrandRx}
             className="transition duration-700 ease-in-out transform w-full md:w-2/3 hover:scale-105"
             alt="Low fidelity prototype of pharmacy communicating with patient"
           />
@@ -172,7 +172,7 @@ export default function App() {
           </div>
         </div>
         <div className="relative flex flex-col p-md sm:p-lg text-center m-sm rounded-md">
-          <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-17017&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className="">
+          <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/Adam-Howard---Portfolio?page-id=1175%3A15974&node-id=1180-16806&starting-point-node-id=1175%3A15996&scaling=scale-down&mode=design&t=fd6CShAJxxkgrm4y-1" className="">
             <h2 className="font-medium-buddy mb-sm text-royal">Designing Features for Kids and Teachers</h2>
             <img
             style={{ cursor: "pointer", margin: "auto" }}
@@ -187,11 +187,11 @@ export default function App() {
           </div>
         </div>
         <div className="relative flex flex-col p-md sm:p-lg text-center m-sm rounded-md">
-          <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/adam-portfolio?page-id=1175%3A15974&type=design&node-id=1180-17017&viewport=928%2C1321%2C1.1&t=OYDICEZf5lxCeZWk-1&scaling=scale-down&starting-point-node-id=1175%3A15996&mode=design" className="">
+          <a target="_blank" href="https://www.figma.com/proto/WXjLZPh850XB86Ah9fhCJB/Adam-Howard---Portfolio?page-id=1175%3A15974&node-id=1180-16790&starting-point-node-id=1175%3A15996&scaling=scale-down&mode=design&t=fd6CShAJxxkgrm4y-1" className="">
             <h2 className="font-medium-buddy mb-sm text-royal">Improving Patient Care for Retail Pharmacy</h2>
             <img
             style={{ cursor: "pointer", margin: "auto" }}
-            src={StrandRx}
+            src={Omni}
             className="transition duration-700 ease-in-out transform w-full md:w-2/3 hover:scale-105"
             alt="Image of an EHR Application Design"
           />
