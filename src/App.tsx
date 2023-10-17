@@ -67,10 +67,12 @@ import mm from "./assets/img/heads/new/head-mm.png";
 import eh from "./assets/img/heads/new/head-eh.png";
 import ff from "./assets/img/heads/new/head-ff.png";
 import smile from "./assets/img/heads/new/head-smile.png";
+import quiet from "./assets/img/heads/new/head-muted.png";
 
 const adamHeads4 = [r, oh2, ah2, ah1];
 const adamHeads1 = [rest, w, ah, ff, mm];
 const adamHeads2 = [sh, o, w, eh, rest, smile];
+const adamHeads3 = [sh, w, rest, smile];
 
 type ProjectNames = "goNoodleAgain";
 
@@ -148,7 +150,7 @@ export default function App() {
 
         <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
           {/* <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process - turning ideas into reality. I'm fully aware that I'm not making products for my own artistic expression. I work to find the balance between what the business wants and what the users need.</ChatBubble> */}
-          <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process. It takes creativity to find the balance between what the business wants and what people need. These work samples represent some of my favorite projects.</ChatBubble>
+          <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process. It takes creativity to find the balance between what the business wants and what people need. These work samples represent some of my favorite recent projects.</ChatBubble>
         </div>
         
         {/* <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center relative">
@@ -201,6 +203,66 @@ export default function App() {
             <p className="font-skills text-black mb-sm">Skills: Facilitation, Discovery</p>
           </div>
         </div>
+        
+        <div className="flex flex-col items-center p-md">
+          <img
+          src={quiet}
+          alt="Adam's Silly Face"
+          className="w-1/6"
+          />
+        </div>
+
+        <div className="p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-md text-left">
+          <p className="font-speech">
+          "No matter what daunting challenge confronted us, Adam was always able to stretch to adapt and overcome and have fun throughout the process. I've been inspired by his unique perspective and the standard of excellence he continually pursues."
+          </p>
+          <br/>
+          <em>Head of Design</em>
+        </div>
+        <div className="p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-md text-left">
+          <p className="font-speech">
+          "Behind every great design is purposeful intent, and Adam has a talent for understanding and driving at the intent of the end-consumer, and then translating that into beautifully curated user experiences and interfaces. He communicates well, provides honest feedback, and is a fast learner / worker. His collaboration skills are also a strength, as he has demonstrated successful projects working with engineers and developers."
+          </p>
+          <br/>
+          <em>Lead Front-End Engineer</em>
+        </div>
+        <div className="p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-md text-left">
+          <p className="font-speech">
+          "Adam is such a joy to work with! At GoNoodle he's jumped in quickly and proved invaluable toward getting an MVP across the finish line on time, then seamlessly transitioned into cleaning up our design system for scale, and leading collaboration to improve some complex internal product workflows."
+          </p>
+          <br/>
+          <em>Head of Design</em>
+        </div>
+        <div className="p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-md text-left">
+          <p className="font-speech">
+          "The collaboration and guidance you have provided over the last 2+ years has really enhanced and elevated my thought process, attention to detail and reasoning, and overall quality of work. You are a fantastic designer, but more importantly you have a super inquisitive mind and always strive to find the best solution."
+          </p>
+          <br/>
+          <em>Junior Designer</em>
+        </div>
+        <div className="p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-md text-left">
+          <p className="font-speech">
+          "You've always been very patient and helpful, and I appreciate your willingness to teach. The thing I will miss most about working with you is your uncanny ability to burst into song at the drop of a single word that inspires you."
+          </p>
+          <br/>
+          <em>Delivery Manager</em>
+        </div>
+        <div className="p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-md text-left">
+          <p className="font-speech">
+          "Adam's attitude and aptitude for learning new skills is rare, and makes him an invaluable asset to any team."
+          </p>
+          <br/>
+          <em>Product Manager</em>
+        </div>
+        <div className="p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-md text-left">
+          <p className="font-speech">
+          "I loved working with Adam so much, that I asked him if he would consider working with me on a project to increase diversity in Nashville's tech scene and he has again done remarkable work with his approach and respect to the UX and design disciplines."
+          </p>
+          <br/>
+          <em>Product and Tech Leader</em>
+        </div>
+
+        
 
         <DesignSystem className="w-full md:mt-lg" />
 
@@ -240,14 +302,10 @@ export default function App() {
             <Button email="howard.adamp@gmail.com?subject=Hi, Adam!" className="mt-2xl z-10" text="Get in Touch w/ Adam" />
           </div>
         </div> */}
+        {/* <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-xl text-center">
+          <ChatBubble className="mb-lg" frames={adamHeads3}>If you made it this far (and we're not related) we should definitely talk!</ChatBubble>
+        </div> */}
         <div className="flex flex-col items-center p-md sm:py-lg sm:p-md md:p-lg lg:p-2xl lg:pb-lg lg:pt-xl text-center">
-          {/* <SpotCollabLofi className="w-full mb-md px-sm" /> */}
-          {/* <p className="font-medium-buddy">
-            Hiring is not easy.
-          </p>
-          <p className="font-speech mt-sm lg:px-md">
-            I try to approach interviews the same way I approach design.<br/>If I do my part, it should be an easy hiring decision either way. <br/>Thank you for your time!
-          </p>  */}
           <div className="flex flex-col sm:flex-row items-center justify-center w-full space-y-sm sm:space-y-0 sm:space-x-sm sm:pt-xl mt-sm mb-xl">
             <img className="hidden sm:block absolute object-center w-full md:w-1/2 transform" src={sketchCTA} alt="Sketched Circle"/>
             <Button email="howard.adamp@gmail.com?subject=Hi, Adam!" className="mt-2xl z-10" text="Email Adam" />
