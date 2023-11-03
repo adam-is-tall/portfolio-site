@@ -130,7 +130,7 @@ export default function App() {
         <div className="relative flex flex-col items-center space-y-sm p-md py-lg sm:p-lg md:p-xl lg:px-2xl lg:py-xl lg:pt-lg mt-md md:mt-0 text-center">
           <img className="hidden sm:block absolute -right-0 md:-right-1/4 -top-0 w-1/3" src={sketchCircle} alt="sketched circle"/>
           <ChatBubble direction="right" frames={adamHeads1}>
-          Hello! I'm a product designer with over a decade of experience designing digital products. I want to contribute to a high-performing team that shares my passion for creating meaningful products.
+          Hello! I'm a product designer who leads confidently in strategy and visual design craft. I believe design is essential in creating solutions that help people in a way that's good for business.
           </ChatBubble>
           <img className="hidden sm:block absolute left-1/3 -bottom-6 w-6 md:w-10" src={sketchArrow} alt="sketched arrow"/>
         </div>
@@ -150,7 +150,7 @@ export default function App() {
 
         <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
           {/* <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process - turning ideas into reality. I'm fully aware that I'm not making products for my own artistic expression. I work to find the balance between what the business wants and what the users need.</ChatBubble> */}
-          <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process. It takes creativity to find the balance between what the business wants and what people need. These work samples represent some of my favorite recent projects.</ChatBubble>
+          <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process. I find ways to push myself, learn from mistakes, and get better. These work samples represent some of my favorite recent projects so far.</ChatBubble>
         </div>
         
         {/* <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center relative">
