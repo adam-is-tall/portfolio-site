@@ -150,7 +150,7 @@ export default function App() {
 
         <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center">
           {/* <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process - turning ideas into reality. I'm fully aware that I'm not making products for my own artistic expression. I work to find the balance between what the business wants and what the users need.</ChatBubble> */}
-          <ChatBubble className="mb-lg" frames={adamHeads2}>I'm fascinated by the creative process. I find ways to push myself, learn from mistakes, and get better. These work samples represent some of my recent work.</ChatBubble>
+          <ChatBubble className="mb-lg" frames={adamHeads2}>I'm trying to bring good design to engineering-led organizations.</ChatBubble>
         </div>
         
         {/* <div className="flex flex-col items-center p-md py-lg sm:p-lg md:p-xl lg:p-2xl text-center relative">
